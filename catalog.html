@@ -8,8 +8,11 @@
     <header>
       <div>
         <p><a href="index.html">Техномарт</a></p>
-        <!--Форма
-        <>Поиск<>
+        <!--
+        <form action="№" method="get">
+          <label for="search">Найти</label>
+          <input type="search" name="search" id="search">
+        </form>
         -->
         <p><a href="tabs.html">Закладки:0</a></p>
         <p><a href="bin.html">Корзина:10</a></p>
@@ -52,30 +55,62 @@
         <li><a href="perforator.html">Перфораторы</a></li>
       </ul>
 
-      <h1>Перфораторы</h1>
       <section>
-        <h2>Отфильтровать</h2>
-        <!-- Div фильтра  с непонятной формой-->
-        <div>
-          <h3>Производители</h3>
-          <ul>
-            <li><input type="checkbox" checked>BOSH</li>
-            <li><input type="checkbox" >ИНТЕРСКОЛ</li>
-            <li><input type="checkbox" checked>MAKINA</li>
-            <li><input type="checkbox" >DEWALT</li>
-            <li><input type="checkbox" >HITACHI</li>
-          </ul>
-        </div>
+        <h1>Перфораторы</h1>
+          <h2>Отфильтровать</h2>
+            <form action="#" method="get">
+              <label for="price">Цена</label>
+              <div>
+                0
+              <input type="range" min="0" max="30000" step="100" name="price" id="price">
+              30000
+               </div>
+              <div>
+                <h3>Производители</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="bosh" id="bosh" checked>
+                      <label for="bosh">BOSH</label>
+                    </li>
 
-        <div>
-          <h3>Питание</h3>
-          <ul>
-            <li><input type="checkbox" checked>АККУМАЛЯТОРНЫЕ</li>
-            <li><input type="checkbox" >СЕТЕВЫЕ</li>
-          </ul>
-        </div>
-          
-        <button type="submit">показать</button>
+                    <li>
+                      <input type="checkbox" name="interscol" id="interscol" >
+                      <label for="interscol">ИНТЕРСКОЛ</label> 
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="makina" id="makina" checked>
+                      <label for="boshmakina">MAKINA</label> 
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="dewalt" >
+                      <label for="dewalt" id="dewalt">DEWALT</label> 
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="hitachi" id="hitachi" >
+                      <label for="hitachi">HITACHI</label> 
+                    </li>
+                  </ul>
+              </div>
+
+              <div>
+                <h3>Питание</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="acc" id="acc" checked>
+                      <label for="acc">АККУМАЛЯТОРНЫЕ</label> 
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="net" id="net" >
+                      <label for="net">СЕТЕВЫЕ</label> 
+                    </li>
+                  </ul>
+              </div>
+              <button type="submit">показать</button>
+          </form>
       </section>
 
       <section>
