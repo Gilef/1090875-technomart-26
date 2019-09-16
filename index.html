@@ -35,7 +35,7 @@
       </section>
       <nav>
         <ul>
-          <li><a href="index.html">Главная></a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -96,9 +96,9 @@
 
           <li>
             <h3>
-              <img src="img/perforator_9000.png" width="218" height="170" alt="BFG-9000">
               Перфоратор BOSH BFG 9000
             </h3>
+            <img src="img/perforator_9000.png" width="218" height="170" alt="BFG-9000">
             <p><del>32500 p.</del></p>
             <p>25500 p.</p>
             <div>
@@ -110,9 +110,9 @@
           <li>
             
             <h3>
-              <img src="img/perforator_3000.png" width="218" height="170" alt="BFG-3000">
               Перфоратор BOSH BFG 3000
             </h3>
+            <img src="img/perforator_3000.png" width="218" height="170" alt="BFG-3000">
             <p><del>22500 p.</del></p>
             <p>15500 p.</p>
             <div>
@@ -123,9 +123,9 @@
         
           <li>
             <h3>
-              <img src="img/perforator_6000.png" width="218" height="170" alt="BFG-6000">
               Перфоратор BOSH BFG 6000
             </h3>
+            <img src="img/perforator_6000.png" width="218" height="170" alt="BFG-6000">
             <p><del>30500 p.</del></p>
             <p>25500 p.</p>
             <div>
@@ -137,9 +137,9 @@
           <li>
             
             <h3>
-              <img src="img/perforator_2000.png" width="218" height="170" alt="BFG-2000">
               Перфоратор BOSH BFG 2000
             </h3>
+            <img src="img/perforator_2000.png" width="218" height="170" alt="BFG-2000">
             <br>
             <p>12500 p.</p>
             <div>
@@ -223,7 +223,7 @@
       </section>
 
       <section>
-        <h2>Информация о компании </h2>
+        <h2 class="visually-hidden">Информация о компании </h2>
         <div>
           <h3>Компания "Техномарт"</h3>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства <br>
@@ -265,6 +265,7 @@
           <img src="img/technomart.png" alt="Техномаркет">
         <br>
         <p>г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p> 
+        <p>+7(812)555-05-55</p>
     
     
         <ul>
@@ -283,7 +284,7 @@
         </ul>
       </section>
       <section>
-        <p>(C)2010-2019 Компания "Техномаркет" <br>
+        <p>(C)2010-2019 Компания "Техномарт" <br>
           Все права защищены</p>
 
         <ul>
@@ -295,24 +296,6 @@
         <p>Обратная связь</p>
         <p><a href="https://htmlacademy.ru">mail@htmlacademy.ru</a></p>
 
-                 <!--Это  fieldset?Или просто набор дивов?-->
-          <form action="#" method="POST">
-            <div>
-              <label for ="name"> Ваше имя: </label>
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
-            </div>
-            <div>
-              <label for ="email"> Ваш e-mail: </label>
-              <input type="text" name="email" id="email" placeholder="email@example.com" required>
-            </div>
-            <div> 
-             <label for ="letter"> Текст письма: </label>
-             <textarea name="letter" id="letter" cols="10" rows="6" placeholder="В свободной форме" required>
-             </textarea>
-            </div>
-            <button type="button"> Закрыть </button>
-          </form>
-
         
 
         <p>Разработано:</p>
@@ -320,5 +303,27 @@
           
       </section>
     </footer>
+
+    
+    <section class="visually-hidden">
+        <h2>Обратная связь</h2>
+        <form action="#" method="POST">
+          <div>
+            <label for ="name"> Ваше имя: </label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+          </div>
+          <div>
+            <label for ="email"> Ваш e-mail: </label>
+            <input type="text" name="email" id="email" placeholder="email@example.com" required>
+          </div>
+          <div> 
+          <label for ="letter"> Текст письма: </label>
+          <textarea name="letter" id="letter" cols="10" rows="6" placeholder="В свободной форме" required>
+          </textarea>
+          </div>
+          <button type="button"> Закрыть </button>
+        </form>
+      </section>
+
   </body>
 </html>
