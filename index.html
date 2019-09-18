@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/Style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div>
-        <a><img src="img/logo-technomart.svg" width="137" height="22" alt="Техномаркет"></a>
+      <div class="header-top">
+        <a><img src="img/logo-technomart.svg" width="137" height="22" alt="Техномаркет" class="logo"></a>
         
         <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search">Найти</label>
@@ -16,24 +17,24 @@
         
         <p><a href="tabs.html">Закладки</a></p>
         <p><a href="bin.html">Корзина</a></p>
-        <p><a href="order.html">Оформить заказ</a></p>
+        <p><a href="order.html" class="header-make-order">Оформить заказ</a></p>
       </div>
       
-      <section>
+      <section class="header-mid">
         <h1>
           Интернет магазин
           строительных материалов
           и инструментов для ремесла
         </h1>
-          <p><a href="tel:+78125550555">+7(812)555-05-55</a>s</p>
-          <p>г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p>
+          <p class="header-phone"><a href="tel:+78125550555" >+7(812)555-05-55</a>s</p>
+          <p class="header-location">г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p>
 
-        <ul>
+        <ul class="profile">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Регистрация</a></li>
         </ul>
       </section>
-      <nav>
+      <nav class="header-bot">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">Компания</a></li>
@@ -46,24 +47,24 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="features">
+        <div class="materials">
           <p>Материалы</p>
           <a href="#">на любой вкус</a>
         </div>
-        <div>
+        <div class="instruments">
           <p>Инструмент</p>
           <a href="#">на все случаи жизни</a>
         </div>
-        <div>
+        <div class="techs">
           <p>Техника</p>
           <a href="#">для стройки</a>
         </div>
-        <div>
+        <div class="sales">
           <p>Скидки 50%</p>
           <a href="#">на 350 товаров</a>
         </div>
-        <div>
+        <div class="delivery">
           <p>Доставка</p>
           <a href="#">Бесплатно</a>
         </div>
@@ -88,12 +89,14 @@
         </div>
       </section>
 
-      <section>
-        <h2>Популярные товары</h2>
-        <p><a href="#">Все популярные товары</a></p>
+      <section class="popular-goods">
 
+        <div class="popular-goods-menu">
+          <h2>Популярные товары</h2>
+          <p><a href="#">Все популярные товары</a></p>
+        </div>
+        
         <ul>
-
           <li>
             <h3>
               Перфоратор BOSH BFG 9000
@@ -151,9 +154,11 @@
 
 
       </section>
-      <section>
-        <h2>Популярные производители</h2>
-        <p><a href="">Все производители</a></p>
+      <section class="popular-producers">
+        <div class="popular-producers-menu">
+          <h2>Популярные производители</h2>
+          <p><a href="">Все производители</a></p>
+      </div>
 
         <ul>
           <li><a href="#"><img src="img/bosch.png" width="126" height="37" alt="Bosch"></a></li>
@@ -169,7 +174,7 @@
 
       </section>
       
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
@@ -222,7 +227,7 @@
 
       </section>
 
-      <section>
+      <section class="company-info">
         <h2 class="visually-hidden">Информация о компании </h2>
         <div>
           <h3>Компания "Техномарт"</h3>
@@ -256,14 +261,15 @@
     </main>
 
     <footer>
-      <section>
+      <section class="footer-top">
         <a href="#"><img src="img/technomart.png" alt="Техномаркет"></a>
         <br>
-        <p>г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p> 
-        <p>+7(812)555-05-55</p>
+        <div class="footer-location">
+          <p>г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p> 
+          <p>+7(812)555-05-55</p>
+        </div>
     
-    
-        <ul>
+        <ul class="footer-list-1">
           <li><a href="index.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -271,14 +277,14 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
 
-        <ul>
+        <ul class="footer-list-2">
           <li><a href="materials.html">Материалы</a></li>
           <li><a href="tech.html">Техника</a></li>
           <li><a href="instrument.html">Инструмент</a></li>
           <li><a href="special-offer.html">Спецпредложения</a></li>
         </ul>
       </section>
-      <section>
+      <section class="footer-bot">
         <p>(C)2010-2019 Компания "Техномарт" <br>
           Все права защищены</p>
 

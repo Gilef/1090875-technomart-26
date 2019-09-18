@@ -1,0 +1,243 @@
+@font-face {
+    font-family:"cuprum";
+    src: url(fonts/web/cuprum.woff2) format("woff2"),
+         url(fonts/web/cuprum.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"cuprum";
+    src:url(fonts/web/cuprumbold.woff2) format("woff2"),
+         url(fonts/web/cuprumbold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"cuprum";
+    src: url(fonts/web/cuprumitalic.woff2) format("woff2"),
+         url(fonts/web/cuprumitalic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family:"cuprum";
+    src: url(fonts/web/cuprumbolditalic.woff2) format("woff2"),
+         url(fonts/web/cuprumbolditalic.woff) format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family:"ptsans";
+    src: url(fonts/web/ptsans.woff2) format("woff2"),
+         url(fonts/web/ptsans.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"ptsans";
+    src: url(fonts/web/ptsansbold.woff2) format("woff2"),
+         url(fonts/web/ptsansbold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:"cuprum", "ptsans";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+  }
+
+header{
+    color: #ffffff;
+    background-color:#f3f7f8;
+}
+
+.header-top {
+    background-color: #293449;
+    vertical-align: middle;
+}
+
+nav{
+    background-color: #293449;
+    vertical-align: middle;
+    margin: 0 50;
+}
+
+h1{
+   font-size: 16px;
+   color: #ee3643;
+   font-style: italic;
+
+}
+
+.logo{
+background-color: #ee3643;
+
+}
+
+
+.header-make-order{
+    background: #63a63e 5px 5px ;
+}
+
+
+
+.header-phone{
+    color: #ee3643;
+    font-size: 21px;
+}
+
+.header-location{
+    color: #32425c;
+    font-size: 14px;
+}
+
+.profile li{
+    color: #000000;
+    font-size: 21px;
+}
+
+.features{
+    font-family:"cuprum";
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.materials{
+    background-color: #ffbf47 ;
+}
+
+.instruments{
+    background-color:#3bbce3;
+}
+
+.techs{
+    background-color: #dc91d8;
+}
+
+.sales{
+    background-color: #8ed78f;
+}
+
+.delivery{
+      background-color: #ffc047;
+}
+
+.features a{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main h2{
+    font-size: 30px;
+    color: #32425c;
+}
+.popular-goods-menu,
+.popular-producers-menu{
+    background-color: #f9f5f0;
+
+}
+
+.popular-goods-menu a,
+.popular-producers-menu a{
+    background-color: #ee3643;
+    font-size: 14px;    
+    color: #fde4e6;
+
+}
+
+.popular-goods{
+    font-family: "ptsans";
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.popular-goods h3{
+    font-size: 18px;
+    color: #000000;
+}
+.popular-goods del{
+    color: #a9a9a9;
+}
+
+.popular-goods  div{
+    box-shadow:;
+
+}
+
+.popular-goods ul div a:first-child{
+    font-family: "cuprum";
+    font-size:  14px;
+    color:#eef4ec;
+    background-color: #63a63e;
+}
+
+.popular-goods ul div a:last-child{
+    font-family: "cuprum";
+    font-size:  14px;
+    color:#32425c;
+    border: #63a63e 2px;
+}
+    
+.company-info h3 {
+    font-size: 30px;
+    color:#000000;
+}
+
+.services{
+    font-family: "ptsuns";
+    background-color: #f5f8fa;
+
+}
+.company-info li{
+    font-family: "cuprum";
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footer-top{
+    font-size: 18px;
+    line-height: 24px; 
+    background-color: #32425c;
+}
+
+.footer-bot{
+    background-color: #293449;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-location{
+    color: #f3f7f9;
+}
+
+.footer-list-1 li{
+    color: #f1f5f7;
+}
+.footer-list-2 li{
+    color: #ffd180;
+}
+
+.footer-bot p a{
+    color: #ffd180;
+}
