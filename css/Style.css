@@ -1,47 +1,47 @@
 @font-face {
     font-family:"cuprum";
-    src: url(fonts/web/cuprum.woff2) format("woff2"),
-         url(fonts/web/cuprum.woff) format("woff");
+    src: url(../fonts/web/cuprum.woff2) format("woff2"),
+         url(../fonts/web/cuprum.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"cuprum";
-    src:url(fonts/web/cuprumbold.woff2) format("woff2"),
-         url(fonts/web/cuprumbold.woff) format("woff");
+    src:url(../fonts/web/cuprumbold.woff2) format("woff2"),
+        url(../fonts/web/cuprumbold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family:"cuprum";
-    src: url(fonts/web/cuprumitalic.woff2) format("woff2"),
-         url(fonts/web/cuprumitalic.woff) format("woff");
+    src: url(../fonts/web/cuprumitalic.woff2) format("woff2"),
+         url(../fonts/web/cuprumitalic.woff) format("woff");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family:"cuprum";
-    src: url(fonts/web/cuprumbolditalic.woff2) format("woff2"),
-         url(fonts/web/cuprumbolditalic.woff) format("woff");
+    src: url(../fonts/web/cuprumbolditalic.woff2) format("woff2"),
+         url(../fonts/web/cuprumbolditalic.woff) format("woff");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family:"ptsans";
-    src: url(fonts/web/ptsans.woff2) format("woff2"),
-         url(fonts/web/ptsans.woff) format("woff");
+    src: url(../fonts/web/ptsans.woff2) format("woff2"),
+         url(../fonts/web/ptsans.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"ptsans";
-    src: url(fonts/web/ptsansbold.woff2) format("woff2"),
-         url(fonts/web/ptsansbold.woff) format("woff");
+    src: url(/..fonts/web/ptsansbold.woff2) format("woff2"),
+         url(/..fonts/web/ptsansbold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -240,4 +240,189 @@ main h2{
 
 .footer-bot p a{
     color: #ffd180;
+}
+
+/* Сетка*/
+
+html, body{
+    margin: 0;
+}
+
+header li{
+list-style: none;
+
+    
+}
+.wrap{
+    width: 940px; 
+    margin: auto; 
+    padding: 0 10px;
+} 
+
+.header-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top a,
+.header-top label,
+.header-top input {
+    line-height: 42px;
+    color: white;
+
+}
+
+.header-top .h-left{
+    display: flex;
+
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.h-left{
+    display: flex;
+    line-height: 42px;
+}
+
+.h-right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 42px;
+}
+
+
+.h-right a{
+display:block;
+width:150px;
+
+}
+.logo{
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+}
+
+
+
+.header-mid{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height:160px; 
+}
+
+
+.header-mid .mid-block-1{
+    width: 196px;
+    margin: auto;
+    text-align: left;
+    width: 310px;
+
+}
+
+.header-mid .mid-block-2{
+    width: 260px;
+    margin: auto;
+    width: 320px;
+}
+
+
+.header-mid .mid-block-3{
+    width: 150px;
+    margin: auto;
+    width: 310px;
+}
+
+h1{
+    width: 210px;
+    margin: auto;
+}
+
+
+
+.header-bot ul{
+    margin: auto; 
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 60px;
+    width: 940px;
+}
+
+/*Main*/
+
+.features{
+    width:940px;
+}
+
+.features-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 521px;
+    flex-wrap: wrap;
+}
+
+.features .features-item{
+    width:300px;
+    height:123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+.features div p{
+    font-size: 24px;
+}
+
+
+.features .slides{
+    display: block;
+    width: 620px;
+    height: 266px;
+    flex-grow: 1;
+}
+
+
+
+
+.popular-goods{
+    width: 950px;
+}
+
+.popular-goods-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.goods-wrap ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    
+}
+
+
+.goods-wrap-item{
+    width: 218px;
+    margin-bottom: 20px;
+    /*height: 170px;*/
+    list-style: none;
 }
