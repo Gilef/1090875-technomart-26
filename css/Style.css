@@ -368,7 +368,7 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: space-between;
     height: 521px;
     flex-wrap: wrap;
@@ -381,8 +381,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
-    margin: 10px;
+    flex-wrap: wrap;
+
 }
 
 .features div p{
@@ -407,6 +407,12 @@ h1{
 .popular-goods-menu {
     display: flex;
     justify-content: space-between;
+    
+}
+.popular-goods-menu-menu h2{
+    margin-left: 28px;
+    margin-top: 33px;
+    margin-bottom: 35px;
 }
 .goods-wrap ul{
     
@@ -425,4 +431,110 @@ h1{
     margin-bottom: 20px;
     /*height: 170px;*/
     list-style: none;
+}
+
+.popular-producers{
+    width: 940px;
+
+}
+.popular-producers-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-producers-menu h2{
+    margin-left: 28px;
+    margin-top: 33px;
+    margin-bottom: 30px;
+}
+
+.popular-producers ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.producers-item{
+    list-style: none;
+    margin: 10px 0;
+    width: 220px;
+    height: 145px;
+}
+
+.services{
+    width: 940px;
+}
+.services h2{
+    font-family:"cuprum";
+
+}
+.services p{
+    font-family:"ptsans";
+
+}
+.services li{
+    list-style: none;
+}
+
+.delivery-wrapper{
+    display: flex;
+}
+
+.company-info{
+    width: 940px;
+}
+.company-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.company-info-wrapper li{
+    list-style;
+    font-size:18px;
+    line-height:20px;
+}
+
+.company-info-wrapper p{
+    display: block;
+}
+
+.company-column-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    width: 535px;
+}
+
+.company-column-2{
+    display: flex;
+    flex-direction: column;
+    width: 301px;
+}
+
+.footer-top,
+.footer-bot{
+    width: 940px;
+}
+
+.footer-wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.footer-wrapper-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.footer-column-1{
+    display: flex;
+    flex-direction: column;
+}
+.footer-column-2{
+    display: flex;
 }
