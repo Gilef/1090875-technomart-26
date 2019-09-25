@@ -360,9 +360,6 @@ h1{
 
 /*Main*/
 
-.features{
-    width:940px;
-}
 
 .features-wrap{
     display: flex;
@@ -400,9 +397,6 @@ h1{
 
 
 
-.popular-goods{
-    width: 950px;
-}
 
 .popular-goods-menu {
     display: flex;
@@ -461,9 +455,6 @@ h1{
     height: 145px;
 }
 
-.services{
-    width: 940px;
-}
 .services h2{
     font-family:"cuprum";
 
@@ -511,10 +502,6 @@ h1{
     width: 301px;
 }
 
-.footer-top,
-.footer-bot{
-    width: 940px;
-}
 
 .footer-wrapper ul{
     display: flex;
@@ -523,18 +510,51 @@ h1{
 }
 
 
-.footer-wrapper-1{
+.footer-top .wrap{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 
 }
 
 
 .footer-column-1{
+    width: 310px;
     display: flex;
     flex-direction: column;
 }
+
 .footer-column-2{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer-column-2 ul{
+    display: flex;
+    
+}
+
+.footer-list-1 li ,
+.footer-list-2 li {
+    list-style: none;
+}
+
+.footer-list-1 li a,
+.footer-list-2 li a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-list-1,
+.footer-list-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-bot .wrap{
+  display: flex; 
+  justify-content: space-between;
+}
+.bot-item-2 li{
     display: flex;
 }
