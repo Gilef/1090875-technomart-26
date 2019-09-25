@@ -367,13 +367,11 @@ h1{
     align-items: center;
     justify-content: flex-start;
     align-content: space-between;
-    height: 521px;
     flex-wrap: wrap;
 }
 
-.features .features-item{
+.features-item{
     width:300px;
-    height:123px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,13 +384,21 @@ h1{
     font-size: 24px;
 }
 
+.features-item p,
+.features-item a
+.features-item img{
+    display: flex;
+    
+}
+
 
 .features .slides{
-    display: block;
+    display: flex;
     width: 620px;
-    height: 266px;
     flex-grow: 1;
 }
+
+
 
 
 
