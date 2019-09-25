@@ -471,9 +471,6 @@ h1{
     display: flex;
 }
 
-.company-info{
-    width: 940px;
-}
 .company-info-wrapper{
     display: flex;
     justify-content: space-between;
@@ -526,6 +523,7 @@ h1{
 .footer-column-2{
     display: flex;
     flex-direction:column;
+    flex-grow: 1;
 }
 
 .footer-column-2 ul{
@@ -557,4 +555,11 @@ h1{
 }
 .bot-item-2 li{
     display: flex;
+}
+
+.bot-item-2{
+    display: flex;
+}
+.bot-item-2 a{
+    display: block;
 }
