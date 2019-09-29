@@ -316,7 +316,8 @@ width:150px;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    height:160px; 
+    margin-top:46px; 
+    margin-bottom:40px; 
 }
 
 
@@ -328,14 +329,12 @@ width:150px;
 }
 
 .header-mid .mid-block-2{
-    width: 260px;
     margin: auto;
     width: 320px;
 }
 
 
 .header-mid .mid-block-3{
-    width: 150px;
     margin: auto;
     width: 310px;
 }
@@ -348,13 +347,13 @@ h1{
 
 
 .header-bot ul{
-    margin: auto; 
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    height: 60px;
-    width: 940px;
+    line-height: 60px;
+    padding: 0px;
 }
 
 /*Main*/
@@ -476,29 +475,172 @@ max-width: 620px;
     justify-content: space-between;
     
 }
-.popular-goods-menu-menu h2{
-    margin-left: 28px;
-    margin-top: 33px;
-    margin-bottom: 35px;
-}
-.goods-wrap ul{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-    
+.popular-goods-menu p {
+
 }
 
-
-.goods-wrap-item{
-    width: 218px;
-    margin-bottom: 20px;
-    /*height: 170px;*/
+.popular-goods-menu .goods-list {
+    width: 940px;
+    margin: 20px auto;
     list-style: none;
 }
+
+.goods-list ul{
+
+    padding: 0px;
+}
+
+.goods-item {
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    border: 1px solid #ccc;
+    
+}
+
+.goods-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+
+    width: 60px;
+    height: 60px;
+
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+  
+.goods-item .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.goods-item .actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+
+.goods-item .actions .buy,
+.goods-item .actions .bookmark{
+
+    font-family: "Cuprum";
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+      
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+}
+  
+.goods-item .actions a:last-child {
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+  
+.goods-item .actions {
+    display: none;
+}
+  
+.goods-item:hover .actions {
+    display: block;
+
+}
+
+.goods-item .picture {
+  width: 218px;
+  height: 168px;
+}
+
+.goods-item .picture img {
+  max-width: 100%;
+}
+
+.goods-item .picture {
+    width: 218px;
+    height: 168px;
+}
+
+.goods-item .picture img {
+    max-width: 100%;
+}
+  
+.goods-item .picture {
+    width: 218px;
+    height: 168px;
+}
+  
+.goods-item .picture img {
+    max-width: 100%;
+}
+ 
+.goods-item .name {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;    
+}
+  
+.goods-item .discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    color: #aaaaaa;
+}
+
+.goods-item .price {
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+
+.goods-item .price:after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    width: 0;
+    height: 0;
+
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
+  
+
 
 .popular-producers{
     width: 940px;
@@ -508,6 +650,16 @@ max-width: 620px;
     display: flex;
     justify-content: space-between;
 }
+
+
+.popular-producers-menu p,
+.popular-goods-menu p{
+    margin-top: 25px;
+    margin-right: 24px;
+    margin-bottom: 26px;
+    margin-left: auto;
+}  
+ 
 .popular-producers-menu h2{
     margin-left: 28px;
     margin-top: 33px;
