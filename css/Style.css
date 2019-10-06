@@ -77,15 +77,19 @@ a {
     padding-left: 48px;
 }
 
-.index-header .search:hover,
+.index-header .search:hover{
+    background-color: #212a3a;
+}
+
 .index-header .search:focus{
+    background-color: #ffffff;
     color:#000000;
 }
 
 .search::placeholder{
     color:#ffffff;
 }
-.search:hover::placeholder{
+.search:focus::placeholder{
     color:#000000;
 }
 
@@ -293,8 +297,9 @@ header li{
 }
 
 
-nav a:hover{
-    background: #293449;
+nav a:hover,
+nav a:focus{
+        background: #293449;
 }
   
 nav a:active{
@@ -335,8 +340,10 @@ nav a:active{
     margin: auto;
 }
 
-.header-top-wrapper:hover,
-.header-top-wrapper:focus{
+.h-right .tabs:hover,
+.h-right .tabs:focus,
+.h-right .header-bin:hover,
+.h-right .header-bin:focus{
     background-color: #212a3a;
 }
 
@@ -378,10 +385,6 @@ nav a:active{
     padding-left: 14px;
 }
 
-.h-right:hover, 
-.h-right:focus{ 
-    background-color: #212a3a;
-}
 
 .h-right a:active{
     background-color: #161d29;
@@ -403,7 +406,7 @@ nav a:active{
 }
 
 .logo:hover,
-.logo:active{
+.logo:focus{
     background-color: #ca2c37;
 }
 
@@ -439,6 +442,7 @@ nav a:active{
 
 
 .header-phone a{
+    font-weight: bold;
     padding-left: 25px;
     margin-left:10px;
     margin-top: 7px;
@@ -450,7 +454,7 @@ nav a:active{
     text-align: center;
     color: #ee3643;
     font-size: 21px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
 }
 
 .mid-block-2 p:last-child{
@@ -514,8 +518,9 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    line-height: 60px;
+    line-height: 56px;
     padding: 0px;
+    border-bottom: #293449 4px solid;
 }
 
 /*Main*/
