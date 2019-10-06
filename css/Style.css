@@ -473,7 +473,27 @@ nav a:active{
     justify-content: flex-end;
 }
 
-.mid-block-3 a{
+.mid-block-3 p{
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #ffffff;
+    width: 299px;
+    line-height: 45px;
+}
+
+.mid-block-3 .profile-catalog{
+    box-sizing: border-box;
+    padding:0;
+    font-size: 16px;
+    color: #32425c;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 299px;
+    line-height: 45px;
+}
+
+    .mid-block-3 a{
     display: block;
     background-color: #ffffff;
     line-height: 45px;

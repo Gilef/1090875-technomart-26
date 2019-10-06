@@ -3,52 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/Style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div>
-        <a href="index.html">
-          <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномаркет">
-        </a>
-        
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label for="search">Найти</label>
-          <input type="search" name="search" id="search">
-        </form>
-        
-        <p><a href="tabs.html">Закладки:0</a></p>
-        <p><a href="bin.html">Корзина:10</a></p>
-        <p><a href="order.html">Оформить заказ</a></p>
-    
-      </div>
-      <section>
-        <p>
-          Интернет магазин
-          строительных материалов
-          и инструментов для ремесла
-        </p>
-          <p><a href="tel:+78125550555">+7(812)555-05-55</a></p>
-          <p>г.Санкт-Петербург, ул.Б.Конюшенная д.19/8</p>
+    <header class="index-header">
+      <div class="header-top">
+        <div class="header-top-wrapper wrap">
+          <div class="h-left">
+            <a href="#" class="logo"><img src="img/logo-technomart.svg" width="110px" height="20px" alt="Логотип"></a>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label for="search">  </label>
+              <input class="search" type="search" name="search"  id="search" placeholder="Поиск:">
+            </form>
+          </div>
 
-        <ul>
-          <li><a href ="#">Равшан Джумшутович</a></li>
-          <li><a href="#">Выйти</a></li>
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">Личный кабинет</a></li>
-        </ul>
-      </section>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">Компания</a></li>
-          <li><a href="list.html">Каталог</a></li>
-          <li><a href="news/html">Новости</a></li>
-          <li><a href="special-offer.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li> 
-          <li><a href="Contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+          <div class="h-right">
+              <a class="tabs" href="tabs.html">Закладки: 0</a>
+              <a class="header-bin" href="bin.html">Корзина: 0</a>
+              <a class="header-make-order" href="order.html" >Оформить заказ</a>
+          </div>
+        </div>      
+      </div>
+      <div class="wrap">
+        <section class="header-mid">
+          <div class="mid-block-1">
+            <h1>
+            Интернет магазин
+            строительных материалов
+            и&nbsp;инструментов для ремесла
+            </h1>
+          </div>
+
+          <div class="mid-block-2">
+            <p class="header-phone"><a href="tel:+78125550555" >+7 (812) 555-05-55</a></p>
+            <p class="header-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+
+          <div class="mid-block-3">
+            <p class="Profile-name">Равшан Джамшутович</p>
+            <ul class="profile-catalog">
+              <li><a class="my-orders" href="#">Мои заказы</a></li>
+              <li><a class="personal-profile" href="#">Личный кабинет</a></li>
+            </ul>
+        </div>
+        </section>
+        <nav class="header-bot">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="special-offer.html">Спецпредложения</a></li>
+            <li><a href="delivery.html">Доставка</a></li> 
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
       <ul>
         <li><a href="index.html">Главная</a></li>
