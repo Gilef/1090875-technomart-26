@@ -473,27 +473,42 @@ nav a:active{
     justify-content: flex-end;
 }
 
-.mid-block-3 p{
+.header-mid .mid-block-3-catalog{
+    width: 310px;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.mid-block-3-catalog .profile-name{
+    padding: 0;
+    padding-left: 11px;
+    letter-spacing: 0px;
+    box-sizing: border-box;
     font-size: 21px;
     font-weight: bold;
     background-color: #ffffff;
     width: 299px;
     line-height: 45px;
 }
-
-.mid-block-3 .profile-catalog{
+.mid-block-3-catalog .my-orders{
     box-sizing: border-box;
-    padding:0;
-    font-size: 16px;
-    color: #32425c;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    width: 299px;
-    line-height: 45px;
+    padding-left: 28px;
+    padding-top: 5px;
 }
 
-    .mid-block-3 a{
+.mid-block-3-catalog .personal-profile{
+    box-sizing: border-box;
+    padding-right: 72px;  
+    padding-top: 5px;
+}
+
+.mid-block-3 a{
     display: block;
     background-color: #ffffff;
     line-height: 45px;
