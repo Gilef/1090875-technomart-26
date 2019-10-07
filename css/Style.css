@@ -339,6 +339,16 @@ nav a:active{
     justify-content: center;
     margin: auto;
 }
+.h-right .header-bin-active{
+    box-sizing: border-box;
+    padding-left: 22px;
+    background-color: #ee3643;
+}
+
+.h-right .tabs-active{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
 
 .h-right .tabs:hover,
 .h-right .tabs:focus,
@@ -497,15 +507,28 @@ nav a:active{
     line-height: 45px;
 }
 .mid-block-3-catalog .my-orders{
+    text-decoration: underline;
     box-sizing: border-box;
     padding-left: 28px;
     padding-top: 5px;
 }
 
 .mid-block-3-catalog .personal-profile{
+    text-decoration: underline;
     box-sizing: border-box;
     padding-right: 72px;  
     padding-top: 5px;
+}
+
+.mid-block-3-catalog .personal-profile::before{
+    content:"";
+    position: absolute;
+    right: 479px;
+    top: 147px;
+    width: 4px;
+	height: 4px;
+	background: #32425c;
+    border-radius: 50%;
 }
 
 .mid-block-3 a{
@@ -520,11 +543,16 @@ nav a:active{
 }
 
 .mid-block-3 a:hover,
-.mid-block-3 a:focus{
-    color: #ee3643;
+.mid-block-3 a:focus,
+.mid-block-3-catalog .personal-profile:hover,
+.mid-block-3-catalog .personal-profile:focus,
+.mid-block-3-catalog .my-orders:hover,
+.mid-block-3-catalog .my-orders:focus{
+        color: #ee3643;
 }
 
-.mid-block-3 a:active{
+.mid-block-3 a:active,
+.mid-block-3-catalog a:active{
     color: rgba(0, 0, 0, 0.3);
 }
 
