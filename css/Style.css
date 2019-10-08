@@ -272,6 +272,16 @@ main h2{
 
 /* Сетка*/
 
+/*
+-
+-
+-
+Header
+-
+-
+-
+*/
+
 html, body{
     margin: 0;
 }
@@ -544,10 +554,10 @@ nav a:active{
 
 .mid-block-3 a:hover,
 .mid-block-3 a:focus,
-.mid-block-3-catalog .personal-profile:hover,
-.mid-block-3-catalog .personal-profile:focus,
-.mid-block-3-catalog .my-orders:hover,
-.mid-block-3-catalog .my-orders:focus{
+.personal-profile:hover,
+.personal-profile:focus,
+.my-orders:hover,
+.my-orders:focus{
         color: #ee3643;
 }
 
@@ -586,20 +596,29 @@ h1{
     border-bottom: #293449 4px solid;
 }
 
-/*Main*/
+/*
+-
+-
+-
+Main
+-
+-
+-
+*/
 
 
 .features-wrap{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    align-content: space-between;
     flex-wrap: wrap;
 }
 
 .features-item{
+    box-sizing: border-box;
     width:300px;
+    min-height: 123px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -607,6 +626,48 @@ h1{
     flex-wrap: wrap;
 
 }
+.materials{
+    order:1;
+}
+
+.instruments{
+    order:2;
+}
+
+.techs{
+    order:3;
+}
+
+.slide{
+    box-sizing: border-box;
+    padding:26px 0;
+    margin-right:0px;
+    margin-top:20px;
+    background: url("../img/slider_drill.jpg") 100% 100% no-repeat;
+    width: 620px;
+    order:4;
+}
+
+.features .features-block{
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+
+.features-block .delivery{
+    align-self: flex-end;
+
+}
+.features-block .sales{
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
 
 .features div p{
     font-size: 24px;
@@ -620,17 +681,6 @@ h1{
 }
 
 
-/*
-.features .slide{
-    display: flex;
-    width: 620px;
-    flex-grow: 1;
-    -
-*/
-
-.slide{
-    position: relative;
-}
 
 .slide-list {
     margin: 0;
