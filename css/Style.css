@@ -149,6 +149,7 @@ h1{
 }
 
 .features{
+    margin-top:59px;
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
@@ -617,6 +618,7 @@ Main
 
 .features-item{
     box-sizing: border-box;
+    padding-left: 23px;
     width:300px;
     min-height: 123px;
     display: flex;
@@ -630,12 +632,30 @@ Main
     order:1;
 }
 
+.materials a{
+    background-color:rgba(229, 171, 64, 0.9);
+}
 .instruments{
     order:2;
 }
 
+.instruments a{
+    background-color:rgba(53, 169, 204, 0.9);
+}
 .techs{
     order:3;
+}
+
+.techs a{
+    background-color:rgba(198, 130, 193, 0.9);
+}
+
+.sales a{
+    background-color:rgba(128, 193, 128, 0.9);
+}
+
+.delivery a{
+    background-color:rgba(229, 171, 64, 0.9);
 }
 
 .slide{
@@ -669,17 +689,24 @@ Main
 }
 
 
-.features div p{
+.features  p{
     font-size: 24px;
+    font-weight: bold;
 }
 
 .features-item p,
 .features-item a
 .features-item img{
-    display: flex;
-    
+    display: block;
 }
 
+.features-item a{
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+    box-sizing: border-box;
+    padding:14px 0;
+}
 
 
 .slide-list {
