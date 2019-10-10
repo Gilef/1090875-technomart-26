@@ -190,18 +190,12 @@ main h2{
     font-size: 30px;
     color: #32425c;
 }
-.popular-goods-menu,
-.popular-producers-menu{
-    background-color: #f9f5f0;
 
-}
-
-.popular-goods-menu a,
-.popular-producers-menu a{
-    background-color: #ee3643;
-    font-size: 14px;    
-    color: #fde4e6;
-
+.populars .button{
+    font-size: 14px;
+    width:253px;
+    line-height: 38px;
+    padding:0;
 }
 
 .popular-goods{
@@ -763,15 +757,6 @@ Main
     margin-left: 2px;
 }
 
-.popular-goods-menu {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.popular-goods-menu p {
-
-}
-
 .popular-goods-menu .goods-list {
     width: 940px;
     margin: 20px auto;
@@ -936,26 +921,23 @@ Main
 }
   
 
-
-.popular-producers{
-    width: 940px;
-
-}
-.popular-producers-menu{
+.populars{
+    background-color: #f9f5f0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
-.popular-producers-menu p,
-.popular-goods-menu p{
+.populars p{
     margin-top: 25px;
     margin-right: 24px;
     margin-bottom: 26px;
     margin-left: auto;
 }  
  
-.popular-producers-menu h2{
+.populars h2{
+    font-weight: normal;;
+    text-transform: uppercase;
     margin-left: 28px;
     margin-top: 33px;
     margin-bottom: 30px;
