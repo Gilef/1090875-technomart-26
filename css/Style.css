@@ -153,6 +153,8 @@ h1{
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
+    margin-bottom: 53px;
+
 }
 
 .materials{
@@ -618,14 +620,9 @@ Main
 
 .features-item{
     box-sizing: border-box;
-    padding-left: 23px;
-    width:300px;
+    padding: 5px 23px;
+    min-width:300px;
     min-height: 123px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
 
 }
 .materials{
@@ -660,11 +657,12 @@ Main
 
 .slide{
     box-sizing: border-box;
-    padding:26px 0;
+    padding:23px 0;
     margin-right:0px;
     margin-top:20px;
     background: url("../img/slider_drill.jpg") 100% 100% no-repeat;
     width: 620px;
+    min-height: 266px;
     order:4;
 }
 
@@ -689,7 +687,9 @@ Main
 }
 
 
-.features  p{
+.features-item p{
+    margin-top: 20px;
+    margin-bottom: 14px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -697,25 +697,31 @@ Main
 .features-item p,
 .features-item a
 .features-item img{
-    display: block;
 }
 
 .features-item a{
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
-    width: 135px;
+    min-width: 135px;
     box-sizing: border-box;
-    padding:14px 0;
+    padding:7px;
+    border-radius: 3px;
 }
 
 
-.slide-list {
+.slide-menu {
     margin: 0;
     padding: 0;
     
     list-style: none;
 }
 
+.slide-list{
+    margin: 0;
+    padding: 0;
+    padding-left: 23px;
+}
 
 .slide-item{
     display: none;
@@ -726,21 +732,24 @@ Main
 }
 
 .slide-item h3{
+text-transform: uppercase;
 font-size: 36px;
 line-height: 36px;
-font-weight: 700;
+font-weight: bold;
 
-color: #293449;
+color: #ffffff;
 
-margin: 0px;
-margin-bottom: 8px;
+margin: 0;
 max-width: 620px;
 }
   
 .slide-item p{
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 18px;
     max-width: 394px;
     margin: 0px;
-    margin-bottom:63px;
+    margin-bottom:123px;
 }
 
 
@@ -772,7 +781,16 @@ max-width: 620px;
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
   
-
+.slide-list .slide-button  {
+    display: block;
+    box-sizing: border-box;
+    width: 195px;
+    line-height:38px;
+    margin: 0;
+    padding:0;
+    margin-left: 2px;
+    
+}
 
 
 
