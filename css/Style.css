@@ -617,6 +617,7 @@ Main
 }
 
 .features-item{
+    position: relative;
     box-sizing: border-box;
     padding: 5px 23px;
     min-width:300px;
@@ -783,8 +784,7 @@ Main
     border: 1px solid #ccc;
 }
 
-.goods-item .flag,
-.features-item .flag-new{
+ .flag-new{
     position: absolute;
     top: -1px;
     right: -1px;
@@ -795,11 +795,12 @@ Main
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
-}
-  
-.goods-item .flag-new,
-.features-item .flag-new{
     background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.features-item .flag-new{
+    top: 0;
+    right: 0;
 }
 
 .goods-item .actions {
