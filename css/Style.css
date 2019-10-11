@@ -40,8 +40,8 @@
 
 @font-face {
     font-family:"ptsans";
-    src: url(/..fonts/web/ptsansbold.woff2) format("woff2"),
-         url(/..fonts/web/ptsansbold.woff) format("woff");
+    src: url(../fonts/web/ptsansbold.woff2) format("woff2"),
+         url(../fonts/web/ptsansbold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -406,10 +406,21 @@ nav a:active{
     padding-left: 14px;
 }
 
+.tabs{
+    background: url("../img/svg-technomart/icon-bookmark.svg") no-repeat 17px 48%;
+}
+
+.header-bin{
+    background: url("../img/svg-technomart/icon-cart.svg") no-repeat 17px 48%;
+}
+.search{
+    background: url("../img/svg-technomart/icon-search.svg") no-repeat 17px 48%;
+    opacity: 30%;
+}
 
 .h-right a:active{
     background-color: #161d29;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);   
 }
 
 .logo{
@@ -758,7 +769,7 @@ Main
     margin-left: 2px;
 }
 
-.popular-goods-menu .goods-list {
+.goods-list {
     width: 940px;
     margin: 20px auto;
     list-style: none;
@@ -777,7 +788,7 @@ Main
     margin-bottom: 10px;
     
     line-height: 20px;
-    font-family:"pt-sans", "Arial", "Arial Narrow", "sans-serif";
+    font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
     font-weight: bold;
     text-align: center;
     
