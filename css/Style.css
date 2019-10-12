@@ -45,7 +45,15 @@
     font-weight: bold;
     font-style: normal;
 }
+/*
+html {
+     box-sizing: border-box;
+}
 
+*, *::before, *::after {
+     box-sizing: inherit; 
+}
+*/
 body {
     margin: 0;
     padding: 0;
@@ -58,10 +66,10 @@ body {
     background-color: #ffffff;
 }
 
+
 a {
     color: inherit;
     text-decoration: none;
-
 }
 
 
@@ -89,6 +97,7 @@ a {
 .search::placeholder{
     color:#ffffff;
 }
+
 .search:focus::placeholder{
     color:#000000;
 }
@@ -110,7 +119,6 @@ h1{
     font-size: 16px;
     color: #ee3643;
     font-style: italic;
-
 }
 
 .logo{
@@ -119,7 +127,6 @@ h1{
 
 .logo img{
     margin: 10px auto;
-    
 }
     
 
@@ -135,7 +142,6 @@ h1{
 .h-right .header-make-order:active{
     color: rgba(255,255,255,0.5);
     background: #518534;
-
 }
 
 .header-location{
@@ -149,36 +155,34 @@ h1{
 }
 
 .features{
-    margin-top:59px;
+    margin-top: 59px;
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 53px;
-
 }
 
 .materials{
-    background:  url("../img/svg-technomart/icon-1.svg") #ffbf47 no-repeat 213px 55%;
+    background: url("../img/svg-technomart/icon-1.svg") #ffbf47 no-repeat 213px 55%;
     order:1;
-    
 }
 
 .instruments{
-    background:  url("../img/svg-technomart/icon-2.svg") #3bbce3 no-repeat 196px 55%;
+    background: url("../img/svg-technomart/icon-2.svg") #3bbce3 no-repeat 196px 55%;
     order:2;
 }
 
 .techs{
-    background:  url("../img/svg-technomart/icon-3.svg") #dc91d8e3 no-repeat 190px 54.5%;
+    background: url("../img/svg-technomart/icon-3.svg") #dc91d8e3 no-repeat 190px 54.5%;
     order:3;
 }
 
 .sales{
-    background:  url("../img/svg-technomart/icon-4.svg") #8ed78f no-repeat 196px 55%;
+    background: url("../img/svg-technomart/icon-4.svg") #8ed78f no-repeat 196px 55%;
 }
 
 .delivery{
-    background:  url("../img/svg-technomart/icon-5.svg") #ffbf47 no-repeat 191px 55%;
+    background: url("../img/svg-technomart/icon-5.svg") #ffbf47 no-repeat 191px 55%;
 }
 
 .features a{
@@ -193,9 +197,9 @@ main h2{
 
 .populars .button{
     font-size: 14px;
-    width:253px;
+    width: 253px;
     line-height: 38px;
-    padding:0;
+    padding: 0;
 }
 
 .popular-goods{
@@ -344,12 +348,6 @@ nav a:active{
 
 }
 
-.header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
 .h-right .header-bin-active{
     box-sizing: border-box;
     padding-left: 22px;
@@ -403,15 +401,48 @@ nav a:active{
 
 .tabs,
 .header-bin{
+    position: relative;
     padding-left: 14px;
 }
 
-.tabs{
-    background: url("../img/svg-technomart/icon-bookmark.svg") no-repeat 17px 48%;
+.tabs::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: 17px;
+    background: url("../img/svg-technomart/icon-bookmark.svg") no-repeat left center;
+    opacity: 0.3;
 }
 
-.header-bin{
-    background: url("../img/svg-technomart/icon-cart.svg") no-repeat 17px 48%;
+.tabs:hover::before,
+.tabs:focus::before{
+    opacity: 1;
+}
+
+.tabs:active::before{
+    opacity: 0.3;
+}
+
+.header-bin::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: 17px;
+    background: url("../img/svg-technomart/icon-cart.svg") no-repeat left center;
+    opacity: 0.3;
+}
+
+.header-bin:hover::before,
+.header-bin:focus::before{
+    opacity: 1;
+}
+
+.header-bin:active::before{
+    opacity: 0.3;
 }
 .search{
     background: url("../img/svg-technomart/icon-search.svg") no-repeat 17px 48%;
@@ -424,17 +455,19 @@ nav a:active{
 }
 
 .logo{
+    position: relative;
     width: 220px;
     background-color: #ee3643;
 }
 
 .logo::before{
+    content: "";
     position: absolute;
     width: 220px;
-    height:42px;
-    content: "";
-    border-bottom: #b52933  solid 5px;
-
+    top: 42px;
+    left: 0;
+    height: 5px;
+    background-color: #b52933;
 }
 
 .logo:hover,
@@ -442,8 +475,17 @@ nav a:active{
     background-color: #ca2c37;
 }
 
+.logo:hover::before,
+.logo:focus::before{
+    background-color: #9a212a;
+}
+
 .logo:active{
     background-color: #ba2732;
+}
+
+.logo:active::before{
+    background-color: #8e1e26;
 }
 
 .header-mid{
@@ -474,6 +516,7 @@ nav a:active{
 
 
 .header-phone a{
+    position: relative;
     font-weight: bold;
     padding-left: 25px;
     margin-left:10px;
@@ -487,6 +530,17 @@ nav a:active{
     color: #ee3643;
     font-size: 21px;
     letter-spacing: 0px;
+}
+
+.header-phone a::before{
+    content: ""; 
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: 14px;
+    background: url("../img/svg-technomart/icon-phone.svg") no-repeat center left;
+
 }
 
 .mid-block-2 p:last-child{
@@ -623,7 +677,7 @@ Main
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -631,7 +685,7 @@ Main
     position: relative;
     box-sizing: border-box;
     padding: 5px 23px;
-    min-width:300px;
+    width:300px;
     min-height: 123px;
 }
 
@@ -640,10 +694,17 @@ Main
     padding:23px 0;
     margin-right:0px;
     margin-top:20px;
-    background: url("../img/slider_drill.jpg") 100% 100% no-repeat;
     width: 620px;
     min-height: 266px;
     order:4;
+}
+
+.slide-item:nth-child(1){
+    background: url("../img/slider_drill.jpg") 100% 100% no-repeat;
+}
+
+.slide-item:nth-child(2){
+    background: url("../img/slider_perforator.jpg") 100% 100% no-repeat;
 }
 
 .features .features-block{
@@ -705,7 +766,7 @@ Main
     display: none;
 }
 
-.slide-item:nth-child(1){
+.slide-item:nth-child(2){
     display: block;
 }
 
