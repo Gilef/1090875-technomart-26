@@ -691,22 +691,23 @@ Main
 }
 
 .slide{
+    position: relative;
     box-sizing: border-box;
-    padding:23px 0;
+    /*padding:23px 0;*/
+    padding: 0;
     margin-right:0px;
     margin-top:20px;
     width: 620px;
     min-height: 266px;
     order:4;
+    background-color: #808080;
 }
 
 .slide-item:nth-child(1){
-    background-color: #808080;
     background: url("../img/slider_drill.jpg") 100% 100% no-repeat;
 }
 
 .slide-item:nth-child(2){
-    background-color: #808080;
     background: url("../img/slider_perforator.jpg") 100% 100% no-repeat;
 }
 
@@ -757,16 +758,18 @@ Main
     padding: 0;
     
     list-style: none;
-    background-image:grey 100% 100%;
+    background-image:#808080 100% 100%;
 }
 
 .slide-list{
+    position: relative;
     margin: 0;
     padding: 0;
-    padding-left: 23px;
 }
 
 .slide-item{
+    min-height: 266px;
+    padding-left: 23px;
     display: none;
 }
 
@@ -779,9 +782,8 @@ Main
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
-
     color: #ffffff;
-
+    padding-top:25px;
     margin: 0;
     max-width: 620px;
 }
@@ -792,7 +794,7 @@ Main
     font-size: 18px;
     max-width: 394px;
     margin: 0px;
-    margin-bottom:123px;
+    margin-bottom: 10px;
 }
 
 
@@ -835,7 +837,19 @@ Main
     margin: 0;
     padding:0;
     margin-left: 2px;
-    
+}
+
+.slide-menu .slide-button {
+    bottom: 21px;
+    position: absolute;
+    font-size: 14px;
+    display: block;
+    box-sizing: border-box;
+    width: 195px;
+    line-height: 38px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
 }
 
 .goods-list {
