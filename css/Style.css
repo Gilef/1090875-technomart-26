@@ -799,7 +799,7 @@ Main
 
 
 .button,
-.slide-menu .button {
+.slide .button {
     display: block;
     width: 240px;
     padding: 13px 0;
@@ -815,7 +815,7 @@ Main
     border-radius: 3px;
     border: none;
 }
-.slide-menu .button{
+.slide .button{
     background-color: #fb565a;
 }
 .button:hover,
@@ -839,7 +839,7 @@ Main
     margin-left: 2px;
 }
 
-.slide-menu .slide-button {
+.slide .slide-button {
     bottom: 21px;
     position: absolute;
     font-size: 14px;
@@ -853,22 +853,21 @@ Main
 }
 
 .goods-list {
-    list-style: none;
-}
-
-.goods-list ul{
     display: flex;
     justify-content: space-between;
+    padding: 0;
     margin: 0;
-
-    padding: 0px;
+    list-style: none;
+    margin-top: 20px;
 }
+
 
 .goods-item {
     position: relative;
     display: inline-block;
     width: 218px;
     margin: 0;
+    margin-bottom: 21px;
     
     line-height: 20px;
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
@@ -942,7 +941,8 @@ Main
     display: none;
 }
   
-.goods-item:hover .actions {
+.goods-item:hover .actions, 
+.goods-item:focus .actions {
     display: block;
 
 }
@@ -978,12 +978,14 @@ Main
     min-height: 40px;
     padding: 0 25px;
     margin-top: 10px;
-    margin-bottom: 15px;    
+    margin-bottom: 10px;    
 }
   
 .goods-item .discount {
+    display: block;
+
     min-height: 20px;
-    margin-top: 15px;
+    margin-top: 9px;
     margin-bottom: 10px;
     
     color: #aaaaaa;
@@ -992,7 +994,7 @@ Main
 .goods-item .price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin: 10px 41px;
     margin-bottom: 20px;
     padding: 10px 30px;
     
@@ -1043,6 +1045,7 @@ Main
     flex-wrap: wrap;
     justify-content: space-between;
     align-items:flex-start;
+    padding: 10px;
 }
 
 .producers-item{
@@ -1050,6 +1053,7 @@ Main
     margin: 10px 0;
     width: 220px;
     height: 145px;
+    border: grey 1px solid;
 }
 
 
