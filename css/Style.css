@@ -217,23 +217,7 @@ main h2{
     color: #a9a9a9;
 }
 
-.popular-goods  div{
-    box-shadow:;
 
-}
-
-.popular-goods ul div a:first-child{
-    font-size:  14px;
-    color:#eef4ec;
-    background-color: #63a63e;
-}
-
-.popular-goods ul div a:last-child{
-    font-size:  14px;
-    color:#32425c;
-    border: #63a63e 2px;
-}
-    
 .company-info h3 {
     font-size: 30px;
     color:#000000;
@@ -445,9 +429,26 @@ nav a:active{
 .header-bin:active::before{
     opacity: 0.3;
 }
-.search{
-    background: url("../img/svg-technomart/icon-search.svg") no-repeat 17px 48%;
+
+.search-form{
+    position: relative;
+}
+
+
+.search-icon{
+    position: absolute;
+    left: 17px;
+    top: 13px;
+    fill:rgba(255, 255, 255, 0.3);
     opacity: 30%;
+}
+
+.search:hover + .search-icon{
+    fill:rgb(255, 255, 255);
+}
+
+.search:focus + .search-icon{
+    fill:#ee3643;
 }
 
 .h-right a:active{
@@ -638,18 +639,34 @@ nav a:active{
     padding-left: 19px;
     width: 121px;
 } 
+.profile li:first-child{
+    position: relative;
+}
+
+.login-icon{
+    fill:#c5c5c5;
+    top:15px;
+    left: 14px;
+    position: absolute;
+}
+
+.enter:hover + .login-icon,
+.enter:focus + .login-icon{
+    fill:#32425c;
+}
+
+.enter:active + .login-icon{
+    fill:#c5c5c5;
+}
 
 .register{
     width: 150px;
 } 
 
-
-
 h1{
     width: 210px;
     margin: auto;
 }
-
 
 .header-bot ul{
     color: #ffffff;
@@ -819,16 +836,23 @@ Main
     background-color: #fb565a;
 }
 .button:hover,
+.slide .slide-button:hover,
+.slide .slide-button:focus,
 .button:focus {
     background-color: #ca2c37;
 }
 
-.button:active {
+.features .button:active :not(.slide) {
     color: rgba(255, 255, 255, 0.3);
     background-color: #ba2732;
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
   
+.populars .button:active,
+.slide .slide-button:active{
+    background-color: #ba2732;
+}
+
 .slide-list .slide-button  {
     display: block;
     box-sizing: border-box;
@@ -878,7 +902,7 @@ Main
 }
 
 .goods-item:hover{
-    box-shadow: 0px 5px 12px 4px #cccccc;
+    box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
     border: none;
 }
 
@@ -910,12 +934,12 @@ Main
     height: 88px;
     padding: 40px 0;
 
-    background-color: rgba(255,255,255,0.9);
+    background-color: #ffffff;
     z-index: 10;
 }
 
-.goods-item .actions .buy,
-.goods-item .actions .bookmark{
+.actions .buy,
+.actions .bookmark{
 
     font-family: "Cuprum";
     color: white;
@@ -930,18 +954,46 @@ Main
     margin: 0 auto;
     margin-bottom: 7px;
     padding: 7px 0;
-    
-    background-color: #63a63e;
     border: 3px solid #63a63e;
+    border-radius: 3px;
+    
+}
+
+.actions .buy{
+    background-color: #63a63e;
     border-bottom-color: #367315;
 }
+
+.actions .buy:hover,
+.actions .buy:focus{
+    background-color: #5fbb2d;
+    border-color:#5fbb2d;
+    border-bottom-color: #367315;
+}
+
+.actions .buy:focus{
+    background-color: #518534;
+    border-color:#518534;
+}
+
+
   
-.goods-item .actions a:last-child {
+.actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
 }
   
+.actions .bookmark:hover,
+.actions .bookmark:focus{
+    border-color: #32425c;
+}
+
+.actions .bookmark:active{
+    border-color: #32425c;
+    opacity: 0.3;
+}
+
 .goods-item .actions {
     display: none;
 }
@@ -1066,18 +1118,17 @@ Main
 
 .producers-item:hover,
 .producers-item:focus{
-    border: none;
-    box-shadow: 0px 7px 10px 6px #cccccc;
+    border: transparent;
+    box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 
 .producers-item:active{
     opacity: 0.7;
-    border: none;
-    box-shadow: 0px 3px 7px 2px #cccccc;
+    border: transparent;
+    box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
 
-.producers-item img,
 .producers-item a{
     
     margin:auto;
@@ -1101,9 +1152,26 @@ Main
     padding-bottom: 5px;
 }
 
-.producers-item:nth-last-child(5) a{
+.producers-item:nth-last-child(3) a{
     box-sizing: border-box;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    padding-right: 3px;
+}
+
+.producers-item:nth-last-child(4) a{
+    box-sizing: border-box;
+    padding-left: 3px;
+}
+
+
+.producers-item:nth-child(3) a{
+    box-sizing: border-box;
+    padding-bottom: 3px;
+}
+
+.producers-item:nth-child(4) a{
+    box-sizing: border-box;
+    padding-bottom: 12px;
 }
 
 .services p{
@@ -1209,3 +1277,4 @@ Main
 .bot-item-2 a{
     display: block;
 }
+
