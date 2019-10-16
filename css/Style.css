@@ -225,8 +225,22 @@ main h2{
 
 .services{
     background-color: #f5f8fa;
-
+    margin-top: 135px;
 }
+
+.services h3{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    color: #32425c;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.services h2{
+    text-transform: uppercase;
+}
+
 .company-info li{
     font-size: 18px;
     line-height: 20px;
@@ -1118,17 +1132,18 @@ Main
 
 .producers-item:hover,
 .producers-item:focus{
-    border: transparent;
+    border: 1px solid transparent;
     box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 
 .producers-item:active{
     opacity: 0.7;
-    border: transparent;
+    border: 1px solid transparent;
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
 
+.producers-item img,
 .producers-item a{
     
     margin:auto;
@@ -1174,16 +1189,68 @@ Main
     padding-bottom: 12px;
 }
 
+.services h2{
+    letter-spacing: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.services-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+
+.services-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin-right: 60px;;
+}
+
+.services-list li{
+    text-align: left;
+    display:block;
+    width: 240px;
+    height: 63px;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-top: 14px;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 30px;
+    background-color: #32425c;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+}
+
+
 .services p{
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
-
+    display: block;
 }
+
 .services li{
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
     list-style: none;
 }
 
-.delivery-wrapper{
-    display: flex;
+.srv-delivery{
+    background: url(../img/delivery.png) no-repeat 100% 25px;
+    width: 640px;
+    margin-left: 20px;
+}
+
+.srv-delivery p{
+    width: 275px;
+    height: 150px;
+    margin-top: 25px;
 }
 
 .company-info-wrapper{
