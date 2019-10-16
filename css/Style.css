@@ -863,7 +863,8 @@ Main
 }
   
 .populars .button:active,
-.slide .slide-button:active{
+.slide .slide-button:active,
+.credit .button:active{
     background-color: #ba2732;
 }
 
@@ -1198,7 +1199,7 @@ Main
 .services-wrapper{
     display: flex;
     justify-content: space-around;
-    margin-top: 65px;
+    margin-top: 71px;
 }
 
 .services-list{
@@ -1228,6 +1229,12 @@ Main
     border-top: 1px solid #405069;
 }
 
+.services-list li:nth-child(1){
+    background: transparent;
+    border-color: transparent;
+    color: #32425c;
+
+}
 
 .services p{
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
@@ -1241,17 +1248,42 @@ Main
     list-style: none;
 }
 
-.srv-delivery{
+.services-block{
+    display: none;
+}
+
+.services-block:nth-child(2){
+    display: block;
+}
+
+.services-block{
     background: url(../img/delivery.png) no-repeat 100% 25px;
     width: 640px;
     margin-left: 20px;
 }
 
-.srv-delivery p{
+.services-block p{
     width: 275px;
-    height: 150px;
     margin-top: 25px;
 }
+
+.garanty{
+    background: url(../img/garanty.png) no-repeat 100% 25px;
+}
+
+.garanty p{
+    width: 380.5px;
+}
+
+.credit{
+    background: url(../img/credit.png) no-repeat 100% 25px;
+}
+
+.credit p{
+    width: 281px;
+    height: 100px;
+}
+
 
 .company-info-wrapper{
     display: flex;
