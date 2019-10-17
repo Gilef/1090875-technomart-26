@@ -249,10 +249,14 @@ main h2{
     text-transform: uppercase;
 }
 
+footer{
+    background-color: #32425c;
+
+}
+
 .footer-top{
     font-size: 18px;
     line-height: 24px; 
-    background-color: #32425c;
 }
 
 .footer-bot{
@@ -1287,6 +1291,7 @@ Main
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 73px;
 }
 
 .company-info li{
@@ -1368,8 +1373,8 @@ Main
 .company-column-2 .button{
     font-family: "cuprum", "Verdana", "Arial", "sans-serif";
     padding: 11px 0;
-    margin-left: 4px;
-    width: 298px;
+    margin-left: 2px;
+    width: 300px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -1382,24 +1387,36 @@ Main
 
 }
 
-
 .footer-top .wrap{
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 50px;
 }
 
+/**********footer-column-1*******/
 
 .footer-column-1{
-    width: 310px;
+    width: 326px;
     display: flex;
     flex-direction: column;
 }
+
+.footer-logo{
+    margin-bottom: 21px;
+}
+.footer-location p{
+   margin: 0;
+   margin-left: 5px;
+}
+
+/**********footer-column-2*******/
+
 
 .footer-column-2{
     display: flex;
     flex-direction:column;
     flex-grow: 1;
+    margin-left: 30px;
 }
 
 .footer-column-2 ul{
@@ -1409,34 +1426,127 @@ Main
 
 .footer-list-1 li ,
 .footer-list-2 li {
+    padding:0;
     list-style: none;
 }
 
+/*
 .footer-list-1 li a,
 .footer-list-2 li a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+*/
+
 .footer-list-1,
 .footer-list-2{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+
+.footer-list-1{
+    margin-top: 36px;
+    margin-left: 35px;
+}
+
+.footer-list-2{
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+/**********footer-bot***************/
+
 .footer-bot .wrap{
   display: flex; 
   justify-content: space-between;
+  margin-top: 20px;
+  min-height: 107px;
 }
+
+.bot-item-1 p{
+    width: 235px;
+    margin: 0;
+    margin-top: 37px;
+}
+
+.bot-item-2 ul{
+    padding: 0;
+    margin-right: 5px;
+    margin-top: 35px;
+
+}
+.VK-icon:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 50%;
+    position: absolute;
+    background: url(../img/svg-technomart/icon-vk.svg) no-repeat center center #212a3a;
+    border-radius: 50%;
+}
+
+.FB-icon:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 70px;
+    top: 50%;
+    position: absolute;
+    background: url(../img/svg-technomart/icon-fb.svg) no-repeat center center #212a3a;
+    border-radius: 50%;
+}
+
+.IG-icon:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 115px;
+    top: 50%;
+    position: absolute;
+    background: url(../img/svg-technomart/icon-insta.svg) no-repeat center center #212a3a;
+    border-radius: 50%;
+}
+
+.soc-media:hover:before,
+.soc-media:focus:before,
+.soc-media:active:before{
+    background-color: #ee3643;
+}
+
 .bot-item-2 li{
+    position: relative;
     display: flex;
 }
 
 .bot-item-2{
     display: flex;
-}
-.bot-item-2 a{
-    display: block;
+    min-width: 132px;
 }
 
+.bot-item-3 {
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 2px;
+}
+
+
+
+.bot-item-3 p{
+    margin: 0;
+}
+
+.bot-item-3 p:first-child{
+    margin-top: 35px;
+}
