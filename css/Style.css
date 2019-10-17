@@ -249,23 +249,6 @@ main h2{
     text-transform: uppercase;
 }
 
-.company-info li{
-    list-style: none;
-    position: relative;
-    font-size: 18px;
-    line-height: 20px;
-}
-.company-info li:before{
-    position: absolute;
-    content:"";
-    width: 25px;
-    height: 2px;
-    left: -30px;
-    top: 50%;
-    background-color: #ee3643;
-
-}
-
 .footer-top{
     font-size: 18px;
     line-height: 24px; 
@@ -785,7 +768,7 @@ Main
 }
 
 
-.features-item a{
+.transparent-button{
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
@@ -796,12 +779,12 @@ Main
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.features-item a:hover,
-.features-item a:focus{
+.transparent-button:hover,
+.transparent-button:focus{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.features-item a:active{
+.transparent-button:active{
     background-color: rgba(0, 0, 0, 0.3);
 }
 .slide-list {
@@ -849,8 +832,7 @@ Main
 }
 
 
-.button,
-.slide .button {
+.button{
     display: block;
     width: 240px;
     padding: 13px 0;
@@ -866,27 +848,23 @@ Main
     border-radius: 3px;
     border: none;
 }
-.slide .button{
-    background-color: #fb565a;
-}
+
 .button:hover,
-.slide .slide-button:hover,
-.slide .slide-button:focus,
 .button:focus {
     background-color: #ca2c37;
 }
 
-.features .button:active :not(.slide) {
+.button:active{
+    background-color: #ba2732;
+}
+
+/*.features .button:active :not(.slide) {
     color: rgba(255, 255, 255, 0.3);
     background-color: #ba2732;
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-  
-.populars .button:active,
-.slide .slide-button:active,
-.credit .button:active{
-    background-color: #ba2732;
-}
+*/
+
 
 .slide-list .slide-button  {
     display: block;
@@ -966,7 +944,7 @@ Main
     left: 0;
 
     width: 218px;
-    height: 88px;
+    min-height: 88px;
     padding: 40px 0;
 
     background-color: #ffffff;
@@ -1237,10 +1215,8 @@ Main
     text-align: left;
     display:block;
     width: 240px;
-    height: 63px;
     box-sizing: border-box;
-    padding-left: 22px;
-    padding-top: 14px;
+    padding: 16px 22px;
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
@@ -1250,8 +1226,8 @@ Main
 }
 
 .services-list li:nth-child(1){
-    background: transparent;
-    border-color: transparent;
+    background: #ffffff;
+    border-color: #ffffff;
     color: #32425c;
 
 }
@@ -1312,10 +1288,22 @@ Main
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .company-info li{
-    list-style:;
-    font-size:18px;
-    line-height:20px;
+    list-style: none;
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+}
+.company-info li:before{
+    position: absolute;
+    content:"";
+    width: 25px;
+    height: 2px;
+    left: -35px;
+    top: 50%;
+    background-color: #ee3643;
+
 }
 
 .company-info p{
@@ -1338,18 +1326,28 @@ Main
 .company-column-1 p:nth-of-type(2){
     width:400px ;
     margin-bottom: 0;
+    margin-top: 9px;
 }
 
 
 .tk-list{
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-left: 30px;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    padding-left: 35px;
 }
 
 .tk-list li{
     padding:10px 0;
 }
+
+.company-column-1 .button{
+    font-family: "cuprum", "Verdana", "Arial", "sans-serif";
+    padding: 10px 0;
+    width: 220px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
 
 .company-column-2{
     display: flex;
@@ -1358,7 +1356,26 @@ Main
     width: 301px;
 }
 
+.company-column-2 p{
+    width: 175px;
+    margin-bottom: 32px;
+}
 
+.map{
+    margin-bottom: 32px;
+}
+
+.company-column-2 .button{
+    font-family: "cuprum", "Verdana", "Arial", "sans-serif";
+    padding: 11px 0;
+    margin-left: 4px;
+    width: 298px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/************************ FOOTER*************************/
 .footer-wrapper ul{
     display: flex;
     flex-wrap: wrap;
