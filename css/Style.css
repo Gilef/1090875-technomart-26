@@ -232,8 +232,9 @@ main h2{
 
 .services{
     background-color: #f5f8fa;
-    margin-top: 135px;
-    margin-bottom: 145px;
+    margin-top: 70px;
+    padding-top: 70px;
+    margin-bottom: 47px;
 }
 
 .services h3{
@@ -696,10 +697,17 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    line-height: 56px;
-    padding: 0px;
     border-bottom: #293449 4px solid;
+    padding: 0;
 }
+
+.header-bot a{
+    box-sizing: border-box;
+    line-height: 17px;
+    padding: 21px 0;
+    padding-bottom: 19px;
+}
+
 
 /*
 -
@@ -1138,7 +1146,6 @@ Main
     justify-content: space-between;
     align-items: stretch;
     padding: 0;
-    margin-bottom: 85px;
 }
 
 .producers-item{
@@ -1173,7 +1180,7 @@ Main
 
 .producers-item a{
     width: 220px;
-    height: 145px;
+    height: 143px;
 }
 
 .producers-item:nth-last-child(1) a{
@@ -1238,6 +1245,7 @@ Main
     width: 240px;
     box-sizing: border-box;
     padding: 16px 22px;
+    padding-bottom: 15px;
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
@@ -1269,14 +1277,17 @@ Main
     display: none;
 }
 
-.services-block:nth-child(2){
+.services-block:nth-of-type(1){
     display: block;
 }
 
 .services-block{
-    background: url(../img/delivery.png) no-repeat 100% 25px;
+    background: url(../img/delivery.png) no-repeat 100% bottom;
     width: 640px;
     margin-left: 20px;
+    min-height: 286px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
 }
 
 .services-block p{
@@ -1285,7 +1296,7 @@ Main
 }
 
 .garanty{
-    background: url(../img/garanty.png) no-repeat 100% 25px;
+    background: url(../img/garanty.png) no-repeat 238px;
 }
 
 .garanty p{
@@ -1293,12 +1304,20 @@ Main
 }
 
 .credit{
-    background: url(../img/credit.png) no-repeat 100% 25px;
+    background: url(../img/credit.png) no-repeat 165px 0;
 }
 
 .credit p{
     width: 281px;
-    height: 100px;
+    margin-bottom: 26px;
+}
+
+.credit .button{
+    font-size: 14px;
+    padding: 10px 5px;
+    width: 185px;
+
+
 }
 
 
@@ -1323,7 +1342,7 @@ Main
     width: 25px;
     height: 2px;
     left: -35px;
-    top: 50%;
+    top: 47%;
     background-color: #ee3643;
 
 }
@@ -1343,6 +1362,7 @@ Main
 
 .company-column-1 p:nth-of-type(1){
     padding-top: 2px;
+    margin-bottom: 16px;
 }
 
 .company-column-1 p:nth-of-type(2){
@@ -1354,8 +1374,8 @@ Main
 
 .tk-list{
     margin-top: 12px;
-    margin-bottom: 14px;
-    padding-left: 35px;
+    margin-bottom: 12px;
+    padding-left: 36px;
 }
 
 .tk-list li{
@@ -1381,17 +1401,19 @@ Main
 .company-column-2 p{
     width: 175px;
     margin-bottom: 32px;
+    margin-top: 15px;
 }
 
 .map{
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 }
 
 .company-column-2 .button{
+    box-sizing: border-box;
     font-family: "cuprum", "Verdana", "Arial", "sans-serif";
-    padding: 11px 0;
-    margin-left: 2px;
-    width: 300px;
+    padding: 10px 5px;
+    padding-left: 11px;
+    width: 100%;
     font-size: 14px;
     line-height: 18px;
 }
@@ -1433,7 +1455,6 @@ Main
     display: flex;
     flex-direction:column;
     flex-grow: 1;
-    margin-left: 30px;
 }
 
 .footer-column-2 ul{
@@ -1444,26 +1465,18 @@ Main
 .footer-list-1 li ,
 .footer-list-2 li {
     padding:0;
+    padding-left: 59px;
     list-style: none;
 }
 
-/*
-.footer-list-1 li a,
-.footer-list-2 li a{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-*/
 
 .footer-list-1,
 .footer-list-2{
     padding: 0;
     margin: 0;
-    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .footer-list-1 li:hover,
@@ -1480,13 +1493,11 @@ Main
 }
 
 .footer-list-1{
-    margin-top: 36px;
-    margin-left: 35px;
+    margin-top: 38px;
 }
 
 .footer-list-2{
-    margin-top: 35px;
-    margin-left: 60px;
+    margin-top: 33px;
 }
 
 /**********footer-bot***************/
@@ -1505,9 +1516,11 @@ Main
 }
 
 .bot-item-2 ul{
+    display: flex;
+    font-size: 0;
     padding: 0;
     margin-right: 5px;
-    margin-top: 35px;
+    margin-top: 27px;
 
 }
 .VK-icon:before{
@@ -1551,11 +1564,9 @@ Main
 
 .bot-item-2 li{
     position: relative;
-    display: flex;
 }
 
 .bot-item-2{
-    display: flex;
     min-width: 132px;
 }
 
