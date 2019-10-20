@@ -1517,64 +1517,48 @@ Main
     margin: 0;
     margin-top: 37px;
 }
-
-.bot-item-2 ul{
-    display: flex;
-    font-size: 0;
-    padding: 0;
-    margin-right: 5px;
-    margin-top: 27px;
-}
-.VK-icon{
-    background:url(../img/svg-technomart/icon-vk.svg) no-repeat center center #212a3a;
-}
-
-/*.VK-icon:before{
-    content: "";
-    width: 40px;
-    height: 40px;
-    left: 25px;
-    top: 50%;
-    position: absolute;
-    background: url(../img/svg-technomart/icon-vk.svg) no-repeat center center #212a3a;
-    border-radius: 50%;
-}
-
-.FB-icon:before{
-    content: "";
-    width: 40px;
-    height: 40px;
-    left: 70px;
-    top: 50%;
-    position: absolute;
-    background: url(../img/svg-technomart/icon-fb.svg) no-repeat center center #212a3a;
-    border-radius: 50%;
-}
-
-.IG-icon:before{
-    content: "";
-    width: 40px;
-    height: 40px;
-    left: 115px;
-    top: 50%;
-    position: absolute;
-    background: url(../img/svg-technomart/icon-insta.svg) no-repeat center center #212a3a;
-    border-radius: 50%;
-}
-*/
-
-.soc-media:hover:before,
-.soc-media:focus:before,
-.soc-media:active:before{
-    background-color: #ee3643;
-}
-
-.bot-item-2 li{
-    position: relative;
-}
+/*******Social medea*******/
 
 .bot-item-2{
-    min-width: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+    width: 220px;
+    margin: 0;
+    align-items: center;
+    margin-left: 45px;
+}
+.bot-item-2 li{
+    font-size: 0;
+    margin: 5px 2px;
+    list-style: none;
+}
+
+.bot-item-2 .soc-media{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:no-repeat center center #212a3a;
+}
+
+.bot-item-2 .VK-icon{
+    background-image:url(../img/svg-technomart/icon-vk.svg);
+}
+.bot-item-2 .FB-icon{
+    background-image:url(../img/svg-technomart/icon-fb.svg);
+}
+.bot-item-2 .IG-icon{
+    background-image:url(../img/svg-technomart/icon-insta.svg);
+}
+
+
+
+.soc-media:hover,
+.soc-media:focus,
+.soc-media:active{
+    background-color: #ee3643;
 }
 
 .bot-item-3 {
