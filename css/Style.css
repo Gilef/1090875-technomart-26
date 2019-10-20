@@ -133,6 +133,7 @@ h1{
 
 .h-right .header-make-order {
     background: #63a63e;
+    padding-left: 5px;
 }
 
 .h-right .header-make-order:hover,
@@ -197,10 +198,10 @@ main h2{
 }
 
 .populars .button{
+    box-sizing: border-box;
+    padding: 10px 5px;
     font-size: 14px;
     width: 253px;
-    line-height: 38px;
-    padding: 0;
 }
 
 .popular-goods{
@@ -257,7 +258,6 @@ footer{
 
 .footer-top{
     font-size: 18px;
-    line-height: 24px; 
 }
 
 .footer-bot{
@@ -345,9 +345,7 @@ nav a:active{
 .header-top a,
 .header-top label,
 .header-top input {
-    line-height: 42px;
     color: white;
-
 }
 
 .header-top .h-left{
@@ -381,7 +379,6 @@ nav a:active{
 .h-left{
     display: flex;
     flex-wrap: wrap;
-    line-height: 42px;
 }
 
 .h-left img{
@@ -393,9 +390,7 @@ nav a:active{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     flex-direction: row;
-    line-height: 42px;
 }
 
 
@@ -404,12 +399,14 @@ nav a:active{
     display:block;
     text-align: center;
     width:150px;
+    padding: 9px 5px;
+    padding-left: 21px;
 }
 
 .tabs,
 .header-bin{
     position: relative;
-    padding-left: 14px;
+    padding-left: 17px;
 }
 
 .tabs::before{
@@ -517,8 +514,8 @@ nav a:active{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    margin-top:38px; 
-    margin-bottom:33px; 
+    margin-top:39px; 
+    margin-bottom:34px; 
 }
 
 
@@ -542,13 +539,14 @@ nav a:active{
 .header-phone a{
     position: relative;
     font-weight: bold;
+    padding: 9px 0;
     padding-left: 25px;
     margin-left:10px;
     margin-top: 7px;
     box-sizing: border-box;
     display: block;
     border:2px #ffffff solid;
-    line-height: 42px;
+    line-height: 21px;
     width: 270px;
     text-align: center;
     color: #ee3643;
@@ -862,17 +860,16 @@ Main
 
 
 .button{
+    box-sizing: border-box;
     display: block;
     width: 240px;
-    padding: 13px 0;
-
+    padding: 13px 5px;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-
     background-color: #fb565a;
     border-radius: 3px;
     border: none;
@@ -899,7 +896,6 @@ Main
     display: block;
     box-sizing: border-box;
     width: 195px;
-    line-height:38px;
     margin: 0;
     padding:0;
     margin-left: 2px;
@@ -910,12 +906,10 @@ Main
     position: absolute;
     font-size: 14px;
     display: block;
-    box-sizing: border-box;
     width: 195px;
-    line-height: 38px;
     margin: 0;
     margin-left: 25px;
-    padding: 0;
+    padding: 10px 5px;
 }
 
 .goods-list {
@@ -945,7 +939,7 @@ Main
 
 .goods-item:hover{
     box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
-    border: none;
+    border-color: transparent;
 }
 
 .flag-new{
@@ -1229,6 +1223,7 @@ Main
 }
 
 .services-list{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1237,6 +1232,15 @@ Main
     padding: 0;
     margin: 0;
     margin-right: 60px;;
+}
+.services-list::after{
+    content: "";
+    position: absolute;
+    height: 279px;
+    width: 10px;
+    bottom: 47px;
+    right: 0;
+    background: url(../img/services-shadow.png) no-repeat;
 }
 
 .services-list li{
@@ -1268,7 +1272,6 @@ Main
 
 .services li{
     font-size: 21px;
-    line-height: 30px;
     font-weight: bold;
     list-style: none;
 }
@@ -1304,7 +1307,7 @@ Main
 }
 
 .credit{
-    background: url(../img/credit.png) no-repeat 165px 0;
+    background: url(../img/credit.png) no-repeat right;
 }
 
 .credit p{
@@ -1521,9 +1524,12 @@ Main
     padding: 0;
     margin-right: 5px;
     margin-top: 27px;
-
 }
-.VK-icon:before{
+.VK-icon{
+    background:url(../img/svg-technomart/icon-vk.svg) no-repeat center center #212a3a;
+}
+
+/*.VK-icon:before{
     content: "";
     width: 40px;
     height: 40px;
@@ -1555,6 +1561,7 @@ Main
     background: url(../img/svg-technomart/icon-insta.svg) no-repeat center center #212a3a;
     border-radius: 50%;
 }
+*/
 
 .soc-media:hover:before,
 .soc-media:focus:before,
