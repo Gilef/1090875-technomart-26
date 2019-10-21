@@ -247,7 +247,7 @@
               <p>Мы с удовольствием доставим  ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж</p>
+              поднимая его на ваш этаж!</p>
             </div>
           
             <div class="services-block garanty">
@@ -371,30 +371,34 @@
        </section>
       </footer>
     
-     <section class="visually-hidden">
+     <section class="visually-hidden write-back">
         <h2>Обратная связь</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
+        <form class="letter-popup" action="https://echo.htmlacademy.ru" method="POST">
           <div>
             <label for ="name"> Ваше имя: </label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+            <br>
+            <input class="letter-popup-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
           </div>
           <div>
             <label for ="email"> Ваш e-mail: </label>
-            <input type="text" name="email" id="email" placeholder="email@example.com" required>
+            <br>
+            <input class="letter-popup-mail"  type="text" name="email" id="email" placeholder="email@example.com" required>
           </div>
           <div> 
           <label for ="letter"> Текст письма: </label>
-          <textarea name="letter" id="letter" cols="10" rows="6" placeholder="В свободной форме" required>
+          <br>
+          <textarea class="letter-popup-text" name="letter" id="letter" cols="15" rows="8" placeholder="В свободной форме" required>
           </textarea>
           </div>
-          <button type="button"> Закрыть </button>
+          <button class="letter-popup-close" type="button"> Закрыть </button>
+          <input class="button letter-popup-submit" type="submit"></input>
         </form>
       </section>
 
-      <div class="visually-hidden">
-        <img src="img/map.png" height="476" width="970"  id="big-map"
+      <div class="visually-hidden map-popup">
+        <img class="big-map" src="img/map.png" height="476" width="970"  id="big-map"
          alt="Наш адресЖг.Санкт-Петербург, ул.Б.Конюшенная д.19/8">
-        <button type="button">Закрыть</button>
+        <button class="map-popup-close" type="button">Закрыть</button>
       </div>
 
   </body>

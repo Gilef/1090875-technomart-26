@@ -233,7 +233,7 @@ main h2{
 
 .services{
     background-color: #f5f8fa;
-    margin-top: 70px;
+    margin-top: 65px;
     padding-top: 70px;
     margin-bottom: 47px;
 }
@@ -244,7 +244,10 @@ main h2{
     margin: 0;
     color: #32425c;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 24px;
+    padding: 6px 0;
+    box-sizing: border-box;
+    font-weight:normal;
 }
 
 .services h2{
@@ -386,6 +389,7 @@ nav a:active{
 }
 
 .h-right{
+    line-height: 18px;
     font-size: 17px;
     display: flex;
     flex-wrap: wrap;
@@ -399,14 +403,13 @@ nav a:active{
     display:block;
     text-align: center;
     width:150px;
-    padding: 9px 5px;
-    padding-left: 21px;
+    padding: 12px;
+    padding-left: 30px;
 }
 
 .tabs,
 .header-bin{
     position: relative;
-    padding-left: 17px;
 }
 
 .tabs::before{
@@ -414,7 +417,7 @@ nav a:active{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: auto;
+    top: 0;
     left: 17px;
     background: url("../img/svg-technomart/icon-bookmark.svg") no-repeat left center;
     opacity: 0.3;
@@ -434,7 +437,7 @@ nav a:active{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: auto;
+    top: 0;
     left: 17px;
     background: url("../img/svg-technomart/icon-cart.svg") no-repeat left center;
     opacity: 0.3;
@@ -573,8 +576,8 @@ nav a:active{
     box-sizing: border-box;
     padding:0;
     font-size: 23px;
-    margin: auto;
-    margin-top: 7px;
+    margin: 0;
+    margin-bottom: 24px;
     width: 310px;
     display: flex;
     flex-wrap: wrap;
@@ -594,15 +597,13 @@ nav a:active{
 
 
 .mid-block-3-catalog .profile-name{
-    padding: 0;
-    padding-left: 11px;
+    padding: 12px;
     letter-spacing: 0px;
     box-sizing: border-box;
     font-size: 21px;
-    font-weight: bold;
     background-color: #ffffff;
     width: 299px;
-    line-height: 45px;
+    line-height: 21px;
 }
 .mid-block-3-catalog .my-orders{
     text-decoration: underline;
@@ -632,7 +633,9 @@ nav a:active{
 .mid-block-3 a{
     display: block;
     background-color: #ffffff;
-    line-height: 45px;
+    line-height: 21px;
+    box-sizing: border-box;
+    padding: 12px;
 
 }
 
@@ -654,9 +657,9 @@ nav a:active{
     color: rgba(0, 0, 0, 0.3);
 }
 
-.enter{
+.mid-block-3 .enter{
     box-sizing: border-box;
-    padding-left: 19px;
+    padding-left: 31px;
     width: 121px;
 } 
 .profile li:first-child{
@@ -1146,8 +1149,8 @@ Main
     display: flex;
     list-style: none;
     margin: 5px 0;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
+    margin-bottom: 18px;
+    border: 1px solid #eaeaea;
     box-sizing: border-box;
 }
 
@@ -1166,7 +1169,7 @@ Main
 
 .producers-item img,
 .producers-item a{
-    
+    box-sizing: border-box;
     margin:auto;
     padding: 0;
     display: inherit;
@@ -1178,48 +1181,44 @@ Main
 }
 
 .producers-item:nth-last-child(1) a{
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    padding-left:5px;
+    padding-bottom: 9px;
+    padding-left:6px;
 }
 
 .producers-item:nth-last-child(2) a{
-    box-sizing: border-box;
     padding-bottom: 5px;
+    padding-left: 2px;
 }
 
 .producers-item:nth-last-child(3) a{
-    box-sizing: border-box;
     padding-bottom: 5px;
     padding-right: 3px;
 }
 
 .producers-item:nth-last-child(4) a{
-    box-sizing: border-box;
     padding-left: 3px;
 }
 
 
-.producers-item:nth-child(3) a{
-    box-sizing: border-box;
-    padding-bottom: 3px;
+.producers-item:nth-child(1) a{
+    padding-top: 3px;
+    padding-right: 2px;
 }
 
 .producers-item:nth-child(4) a{
-    box-sizing: border-box;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .services h2{
     letter-spacing: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .services-wrapper{
     display: flex;
     justify-content: space-around;
-    margin-top: 66px;
+    margin-top: 68px;
 }
 
 .services-list{
@@ -1582,5 +1581,160 @@ Main
     margin-top: 35px;
 }
 
+/*************Popups***********/
+
+
+.letter-popup{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 18px;
+    width: 620px;
+    height: 423px;
+    box-sizing: border-box;
+    padding: 45px 80px;
+    border-top: 7px solid #ff5358;
+    margin: 0;
+    box-shadow: ;
+    background-color: grey;
+}
+
+.letter-popup div{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.letter-popup input {
+   margin: 0;
+   padding: 0;
+   border: 2px solid #dee3e4;
+   border-radius: 3px;
+}
+
+.letter-popup::placeholder{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.letter-popup-name,
+.letter-popup-mail{
+    width: 216px;
+    height: 34px;
+}
+.letter-popup .letter-popup-name{
+    margin-right: 10px;
+}
+
+.letter-popup-text{
+    border: 2px solid #dee3e4;
+    border-radius: 3px;
+    width: 456px;
+    height: 110px;
+}
+
+.letter-popup-close{
+    font-size: 0;   
+    position: absolute;
+    right: 15px;
+    top:15px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url(../img/letter-closer.png) no-repeat center center;
+
+}
+
+.letter-popup .button{
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+/**********Map-popup**********/
+
+.map-popup{
+    position: relative;
+    width: 970px;
+    height: 476px;
+}
+
+.big-map{
+    display: block;
+}
+.map-popup-close{
+    position: absolute;
+    font-size: 0;   
+    right: 15px;
+    top: 15px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url(../img/letter-closer.png) no-repeat center center;
+
+}
+
+
 /********Сatalog-main*********/
+
+.catalog-main-nav{
+    font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+
+.catalog-main-nav li{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    padding-right: 40px;
+}
+.catalog-main-nav .catalog-main-nav-item{
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 0;
+    padding-top: 8px;
+}
+
+.catalog-main-nav .to-home{
+    box-sizing: border-box;
+    display: block;
+    width: 14px;
+    height: 12px;
+    padding-top: 25px;
+    padding-left: 0;
+    font-size: 0;
+    background: url(../img/svg-technomart/icon-home.svg) no-repeat center center;
+}
+.catalog-main-nav .to-perforator{
+    padding-left: 5px;
+}
+
+.catalog-main-nav li::after{
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    width: 8px;
+    height: 12px;
+    background: url(../img/svg-technomart/icon-right-small.svg) no-repeat center center;
+}
+
+.catalog-main-nav li:first-child::after{
+    right: 19px;
+}
+
+.catalog-main-nav li:last-of-type::after {
+    display: none;
+}
 
