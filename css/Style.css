@@ -72,7 +72,14 @@ a {
     text-decoration: none;
 }
 
-
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    …
+  }
 .search{
     font-family: "cuprum", "Verdana", "Arial", "sans-serif";
     font-size: 17px;
@@ -104,6 +111,7 @@ a {
 }
 
 .header-top {
+    min-width: 960px;
     background-color: #293449;
     vertical-align: middle;
 }
@@ -236,6 +244,7 @@ main h2{
     margin-top: 65px;
     padding-top: 70px;
     margin-bottom: 47px;
+    min-width: 960px;
 }
 
 .services h3{
@@ -256,7 +265,7 @@ main h2{
 
 footer{
     background-color: #32425c;
-
+    min-width: 960px;
 }
 
 .footer-top{
@@ -318,7 +327,7 @@ header li{
 .index-header nav a{
     display: block;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 31px;
 }
 
 
@@ -562,8 +571,8 @@ nav a:active{
     position: absolute;  
     width: 100%;
     height: 100%;
-    top: auto;
-    left: 14px;
+    top: 0;
+    left: 13px;
     background: url("../img/svg-technomart/icon-phone.svg") no-repeat center left;
 
 }
@@ -863,6 +872,7 @@ Main
 
 
 .button{
+    font-family: "cuprum", "Verdana", "Arial", "sans-serif";
     box-sizing: border-box;
     display: block;
     width: 240px;
@@ -1583,95 +1593,116 @@ Main
 
 /*************Popups***********/
 
+/*************wite-back***********/
 
 .letter-popup{
-    position: relative;
+    position: fixed; 
+    display: flex;
+    display: none;
+    flex-direction: column;
+    width: 620px;
+    height: 423px;
+    right: calc(50% - 310px);
+    bottom: calc(50% - 211.5px);
+    border-top: 7px solid #ff5358;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.75);
+    background-color: inherit;
+    font-size: 18px;
+    line-height: 18px;
+
+    overflow-y: auto;
+}
+.inputs-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 18px;
-    line-height: 18px;
-    width: 620px;
-    height: 423px;
-    box-sizing: border-box;
     padding: 45px 80px;
-    border-top: 7px solid #ff5358;
-    margin: 0;
-    box-shadow: ;
-    background-color: grey;
+    padding-bottom: 18px;
+}
+.inputs-wrapper div{
+    padding-bottom: 19px;
+    width: 100%;
+}
+.inputs-wrapper .letter-popup-name,
+.inputs-wrapper .letter-popup-mail{
+    width: calc((100% - 20px) / 2);
 }
 
-.letter-popup div{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-}
-
-.letter-popup input {
-   margin: 0;
-   padding: 0;
-   border: 2px solid #dee3e4;
-   border-radius: 3px;
-}
-
-.letter-popup::placeholder{
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-}
-
-.letter-popup-name,
-.letter-popup-mail{
-    width: 216px;
-    height: 34px;
-}
-.letter-popup .letter-popup-name{
-    margin-right: 10px;
-}
-
-.letter-popup-text{
+.letter-popup input[type="text"],
+.letter-popup textarea{
+    line-height: 18px;
+    margin-top: 12px;
+    width: 100%;
     border: 2px solid #dee3e4;
     border-radius: 3px;
-    width: 456px;
-    height: 110px;
+    box-sizing: border-box;
 }
 
+.letter-popup input[type="text"]::placeholder,
+.letter-popup textarea::placeholder{
+    font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
+    font-size: 13px;
+    text-indent: 13px;
+}
+.letter-popup textarea::placeholder{
+    padding-top: 5px ;
+}
+
+
+.letter-popup input{
+    height: 38px;
+    box-sizing: border-box;
+
+}
+
+.button-wrapper{
+    background-color: #f4f4f4;
+    padding: 37px 80px;
+}
+
+.letter-popup-submit{
+    width: 100%;
+}
 .letter-popup-close{
     font-size: 0;   
     position: absolute;
-    right: 15px;
-    top:15px;
+    right: 10px;
+    top:0;
     width: 21px;
     height: 21px;
     border: none;
     background: url(../img/letter-closer.png) no-repeat center center;
-
+    padding-bottom: 37px;
+}
+.letter-popup-text textarea{
+    height: 110px;
 }
 
-.letter-popup .button{
-    line-height: 18px;
+.button-wrapper .button{
     font-size: 14px;
-    font-weight: normal;
-    border: none;
-    width: 100%;
     padding: 10px;
 }
 /**********Map-popup**********/
 
 .map-popup{
-    position: relative;
-    width: 970px;
-    height: 476px;
+    position: fixed;
+    top: calc(50% - 223px);
+    right: calc(50% - 470px);
 }
 
 .big-map{
+    width: 940px;
+    height: 446px;
     display: block;
+    display: none;
+    box-shadow: 0px 0px 15px 0px rgba(47, 42, 43, 0.5);
+
 }
 .map-popup-close{
     position: absolute;
     font-size: 0;   
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
     width: 21px;
     height: 21px;
     border: none;
@@ -1680,8 +1711,10 @@ Main
 }
 
 
-/********Сatalog-main*********/
+/******************Сatalog-main******************/
 
+
+/**********Сatalog-main-nav********/
 .catalog-main-nav{
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
     display: flex;
@@ -1738,3 +1771,4 @@ Main
     display: none;
 }
 
+/*********perforator-block***********/
