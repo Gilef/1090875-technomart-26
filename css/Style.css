@@ -603,13 +603,24 @@ nav a:active{
 .profile-wrapper{
     display: flex;
     box-sizing: border-box;
+    fill: #c5c5c5;
+}
 
+.profile-wrapper svg:hover{
+    fill: #32425c;
+}
+
+.profile-wrapper svg:active,
+.profile-name{
+    fill: #c5c5c5;
+    color: #c5c5c5;
 }
 
 .profile-wrapper a{
     display: block;
     box-sizing: border-box;
 }
+
 .mid-block-3-catalog .profile-name{
     position: relative;
     letter-spacing: 0px;
@@ -620,8 +631,13 @@ nav a:active{
     padding-bottom: 12px;
     padding-left: 46px;
     padding-right:calc(68px - 45px);
+    color: #000000;
 }
 
+.profile-wrapper:hover{
+    color: #ee3643;
+
+}
 .mid-block-3-catalog .icon-logout{
     vertical-align: middle;
     fill: #c5c5c5 ;
@@ -652,6 +668,7 @@ nav a:active{
     display: flex;
     flex-wrap: wrap;
     margin-top: 7px;
+    color: #32425c;
 }
 
 .profile-wrapper-2 a{
@@ -659,9 +676,6 @@ nav a:active{
     line-height: 18px;
     font-size: 16px;
     padding: 0 17px;
-
-}
-.mid-block-3-catalog .my-orders{
 
 }
 
@@ -1130,21 +1144,22 @@ Main
   
 .goods-item .discount {
     display: block;
-
+    line-height: 18px;
+    font-size: 17px;
     min-height: 20px;
     margin-top: 9px;
     margin-bottom: 10px;
-    
     color: #aaaaaa;
 }
 
 .goods-item .price {
+    font-size: 17px;
+    line-height: 18px;
     position: relative;
     width: 80px;
     margin: 10px 41px;
     margin-bottom: 20px;
     padding: 10px 30px;
-    
     color: white;
     background: #ee3643;
     border-radius: 3px;
@@ -1650,9 +1665,9 @@ Main
     background-color: inherit;
     font-size: 18px;
     line-height: 18px;
-
     overflow-y: auto;
 }
+
 .inputs-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -1715,6 +1730,7 @@ Main
     background: url(../img/letter-closer.png) no-repeat center center;
     padding-bottom: 37px;
 }
+
 .letter-popup-text textarea{
     height: 110px;
 }
@@ -1861,6 +1877,12 @@ Main
     padding: 10px;
     color: #000000;
 }
+.catalog-colomn-1 h2{
+    padding-left: 18px;
+    padding-top: 9px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /**********catalog-colomn-2********/
 
@@ -1872,18 +1894,38 @@ Main
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-
+}
+.filter-line :not(h2){
+    color: rgba(0, 0, 0, 0.3);
+    fill: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
 }
 
+.filter-line :not(h2):hover,
+.filter-line :not(h2):focus{
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+}
+
+.perforator-block .catalog-active{
+    color: #ee3643;
+    fill: #ee3643;
+}
 
 .filter-list{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
     margin: 0;
     padding: 9px;
+    padding-right: 0px;
     width: calc(100% - 220px);
     background-color: #f7f3ec;
+}
+
+.filter-list li{
+    padding: 0 30px;
 }
 
 .filter-line h2{
@@ -1892,27 +1934,173 @@ Main
     padding: 10px;
     padding-left: 18px;
     padding-top: 9px;
-}}
+}
 
-.min-max-block{
+.filter-line .min-max-block{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80px;
     font-size: 0;
     line-height: 0;
 }
+.min-max-block,
+.filter-list{
+
+}
+
+.indicator{
+    fill:#231F20
+}
+
+.min,
+.max{
+    display: block;
+    padding: 10px;
+    padding-top: 12px;
+}
+
 /********catalog goods-list*********/
 .catalog-colomn-2 .goods-list{
     flex-wrap: wrap;
-
 }
 
-.catalog-items{
-    font-size: 0;
-}
-  
-.catalog-item {
-    font-size: 16px;
+.perforator-block .goods-item{
+    margin-bottom: 21px;
+}    
+/********catalog-pagenation**********/
+
+.catalog-pagenation{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 18px;
+    margin-top: 31px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
-.catalog-item:nth-child(3n) {
-    margin-right: 0;
-  }
-    
+.catalog-pagenation a{
+    box-sizing: border-box;
+    display: block;
+    min-width: 38px;
+    min-height: 38px;
+    padding: 9px 5px;
+    margin: 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.catalog-pagenation a:hover,
+.catalog-pagenation a:focus{
+    border-color: #bdc6ca;
+}
+
+.catalog-pagenation a:active{
+    border-color: #ee3643;
+}
+
+.catalog-pagenation-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+
+.catalog-pagenation .next-page{
+    min-width: 140px;
+}
+
+.catalog-pagenation .catalog-active{
+    background-color: #ee3643;
+    color: #ffffff;
+}
+
+/**************************************/
+
+.article{
+    background-color: #f2f6f8;
+    padding-top: 68px;
+    padding-bottom: 39px;
+}
+/********************catalog popup*********************/
+.catalog-buy-popup{
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+     display: none; 
+    width: 620px;
+    height: 275px;
+    right: calc(50% - 310px);
+    bottom: calc(50% - 141px);
+    border-top: 7px solid #ee3643;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.75);
+    background-color: inherit;
+    font-size: 30px;
+    line-height: 30px;
+    overflow-y: auto; 
+}
+
+.catalog-buy-close{
+    font-size: 0;   
+    position: absolute;
+    right: 10px;
+    top:0;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url(../img/letter-closer.png) no-repeat center center;
+    padding-bottom: 37px;
+}
+
+.catalog-popup-row-1{
+    min-height: 170px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -7px;
+}
+
+.catalog-popup-row-1 p{
+    box-sizing: border-box;
+    display: block;
+    width: 415px;
+    height: 70px;
+    margin: auto;
+    margin-right: 124px;
+    padding-left: 99px;
+    padding-top: 15px;
+    background: url(../img/form-1.png) no-repeat  left 0;
+}
+
+
+
+.catalog-buy-popup .catalog-popup-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 27px 70px;
+}
+
+.catalog-popup-row-2 .button{
+    width: auto;
+    min-width: 220px;
+    padding: 10px;
+    margin:10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.catalog-popup-row-2 .button:last-child{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.catalog-popup-row-2 .button:last-child:hover,
+.catalog-popup-row-2 .button:last-child:focus{
+    background-color: #e7dede;
+}
+
+.catalog-popup-row-2 .button:last-child:active{
+    background-color: #b3b0b0;
+}
+
+/**********************************/
