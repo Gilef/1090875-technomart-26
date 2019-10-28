@@ -100,45 +100,64 @@
         <!--Доделать второй позунок,и отображение выбранных значений-->
         <section class="catalog-colomn-1">
           <h2>Фильтр:</h2>
+
           <form action="https://echo.htmlacademy.ru" method="get">
-            <label for="price">Цена:</label>
-            <div>
-              0
-              <input type="range" min="0" max="30000" step="100" name="price" id="price">
-              30000
-            </div>
-            <div>
-              <h3>Производители</h3>
-              <ul>
+            <fieldset class="filter-price">
+              <legend><h3>Цена:</h3></legend>
+              <div>
+                0
+                <input type="range" min="0" max="30000" step="100" name="price" id="price">
+                30000
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-producers">
+              <legend><h3>Производители</h3></legend>
+              <ul class="filter-producers-list">
                 <li>
-                  <input type="checkbox" name="bosh" id="bosh" checked>
-                  <label for="bosh">BOSH</label>
+                  <label> 
+                    <input class="producers-checkbox" type="checkbox" name="bosh" checked>
+                    <span class="checkbox"></span>
+                    BOSH
+                  </label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="interscol" id="interscol">
-                  <label for="interscol">ИНТЕРСКОЛ</label>
+                  <label>
+                    <input class="producers-checkbox" type="checkbox" name="interscol">
+                    <span class="checkbox"></span>
+                    ИНТЕРСКОЛ
+                  </label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="makina" id="makina" checked>
-                  <label for="makina">MAKINA</label>
+                  <label>
+                    <input class="producers-checkbox" type="checkbox" name="makina" checked>
+                    <span class="checkbox"></span>
+                    MAKINA
+                  </label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="dewalt" id="dewalt">
-                  <label for="dewalt">DEWALT</label>
+                  <label>
+                    <input class="producers-checkbox" type="checkbox" name="dewalt">
+                    <span class="checkbox"></span>
+                    DEWALT
+                  </label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="hitachi" id="hitachi">
-                  <label for="hitachi">HITACHI</label>
+                  <label>
+                    <input class="producers-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                     <span class="checkbox"></span>
+                     HITACHI
+                  </label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
 
-            <div>
-              <h3>Питание</h3>
+            <fieldset class="filter-energy">
+              <legend><h3>Питание</h3></legend>
               <ul>
                 <li>
                   <input type="checkbox" name="acc" id="acc" checked>
@@ -150,7 +169,7 @@
                   <label for="net">сетевые</label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
             <button type="submit">показать</button>
           </form>
         </section>
@@ -164,9 +183,9 @@
               
             </ul>
             <div class="min-max-block">
-              <a class="min indicator" href="#">
+              <a class="min indicator catalog-active" href="#">
                 по убыванию
-                <svg  class="catalog-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z" />
                 </svg>
               </a>
@@ -229,22 +248,22 @@
             </li>
 
             <li class="goods-item" tabindex="0">
-              <div class="flag flag-new">новое</div>
-              <div class="actions">
+                <div class="actions">
                 <a href='#' class="buy">купить</a>
                 <a href='#' class="bookmark">В закладки</a>
               </div>
               <div class="picture">
-                <img src="img/perforator_2000.png" width="218" height="170" alt="BFG-2000">
+                <img src="img/perforator_3000.png" width="218" height="170" alt="BFG-3000">
               </div>
               <h3 class="name">
-                <a href="">Перфоратор BOSCH BFG 2000</a>
+                <a href="">Перфоратор BOSCH BFG 3000</a>
               </h3>
-              <div class="discount"><del></del></div>
-              <div class="price">12500 p.</div>
+              <del class="discount">22500 p.</del>
+              <div class="price">15500 p.</div>
             </li>
 
             <li class="goods-item" tabindex="0">
+              <div class="flag flag-new">новое</div>
               <div class="actions">
                 <a href='#' class="buy">купить</a>
                 <a href='#' class="bookmark">В закладки</a>
@@ -260,7 +279,6 @@
             </li>
 
             <li class="goods-item" tabindex="0">
-              <div class="flag flag-new">новое</div>
               <div class="actions">
                 <a href='#' class="buy">купить</a>
                 <a href='#' class="bookmark">В закладки</a>
@@ -276,7 +294,8 @@
             </li>
 
             <li class="goods-item" tabindex="0">
-              <div class="actions">
+                <div class="flag flag-new">новое</div>
+                <div class="actions">
                 <a href='#' class="buy">купить</a>
                 <a href='#' class="bookmark">В закладки</a>
               </div>
@@ -306,7 +325,6 @@
             </li>
 
             <li class="goods-item" tabindex="0">
-              <div class="flag flag-new">новое</div>
               <div class="actions">
                 <a href='#' class="buy">купить</a>
                 <a href='#' class="bookmark">В закладки</a>
@@ -340,11 +358,9 @@
     <article class="article">
       <div class="wrap">
         <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор-универсальный инструмент.Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции
-          дрели,шуруповерта и отбойного молотка
-          В ассортементном рядуесть выбор "трехрежимников":в одном устройстве будут совмещены отбойный молоток и ударная
-          дрель.
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель
         </p>
       </div>
     </article>

@@ -610,8 +610,16 @@ nav a:active{
     fill: #32425c;
 }
 
-.profile-wrapper svg:active,
-.profile-name{
+
+
+
+.profile-name:hover svg,
+.profile-name:focus svg{
+    fill: #32425c;
+}
+
+.profile-name:active,
+.profile-name:active svg{
     fill: #c5c5c5;
     color: #c5c5c5;
 }
@@ -1652,6 +1660,7 @@ Main
 /*************wite-back***********/
 
 .letter-popup{
+    z-index: 100;
     position: fixed; 
     display: flex;
     display: none;
@@ -1877,12 +1886,74 @@ Main
     padding: 10px;
     color: #000000;
 }
+.catalog-colomn-1{
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 .catalog-colomn-1 h2{
     padding-left: 18px;
     padding-top: 9px;
     width: 100%;
     box-sizing: border-box;
 }
+
+.catalog-colomn-1 ul{
+    list-style: none;
+}
+/*******checkboxes**********/
+.filter-producers label{
+    position: relative;
+}
+
+.filter-producers li{
+    padding: 10px;
+}
+
+
+.producers-checkbox{
+    position: absolute;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.checkbox{
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    left: -33px;
+    background: url(../img/svg-technomart/checkbox-off.svg) no-repeat;
+}
+
+.producers-checkbox:hover + .checkbox,
+.producers-checkbox:focus + .checkbox{
+    box-shadow: 0 0 3px 1px #518534;
+    border-radius: 2px;
+}
+
+.producers-checkbox:disabled:hover + .checkbox{
+    box-shadow: none;
+    border-radius: auto;
+}
+
+.producers-checkbox:checked + .checkbox{
+    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
+}
+
+
+
+
+/* .producers-checkbox:disabled + .checkbox{
+    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
+}
+
+.producers-checkbox:checked:disabled + .checkbox{
+    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
+} */
+
+/**********filters block********/
 
 /**********catalog-colomn-2********/
 
@@ -1895,22 +1966,28 @@ Main
     box-sizing: border-box;
     padding: 0;
 }
-.filter-line :not(h2){
+.filter-line a{
     color: rgba(0, 0, 0, 0.3);
     fill: rgba(0, 0, 0, 0.3);
     text-decoration: underline;
 }
 
-.filter-line :not(h2):hover,
-.filter-line :not(h2):focus{
+.filter-line a:hover,
+.filter-line a:focus{
     color: rgb(0, 0, 0);
     fill: rgb(0, 0, 0);
 }
 
-.perforator-block .catalog-active{
-    color: #ee3643;
+
+.perforator-block .catalog-active,
+.perforator-block .catalog-active:hover,
+.perforator-block .catalog-active:focus,
+.perforator-block .catalog-active:active{
     fill: #ee3643;
+    color: #ee3643;
 }
+
+
 
 .filter-list{
     display: flex;
@@ -1943,10 +2020,6 @@ Main
     width: 80px;
     font-size: 0;
     line-height: 0;
-}
-.min-max-block,
-.filter-list{
-
 }
 
 .indicator{
@@ -2019,15 +2092,25 @@ Main
 
 .article{
     background-color: #f2f6f8;
-    padding-top: 68px;
-    padding-bottom: 39px;
+    padding-top: 40px;
+    padding-bottom: 57px;
 }
+.article h2{
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 30px;
+    font-weight: normal;
+}
+.article p{
+    font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
+    letter-spacing: 0.1px;
+}
+
 /********************catalog popup*********************/
 .catalog-buy-popup{
+    z-index: 100;
     position: fixed; 
-    display: flex;
-    flex-direction: column;
-     display: none; 
+    display: none; 
     width: 620px;
     height: 275px;
     right: calc(50% - 310px);
@@ -2053,10 +2136,9 @@ Main
 }
 
 .catalog-popup-row-1{
-    min-height: 170px;
+    min-height: 163px;
     display: flex;
     justify-content: center;
-    margin-bottom: -7px;
 }
 
 .catalog-popup-row-1 p{
@@ -2067,7 +2149,7 @@ Main
     margin: auto;
     margin-right: 124px;
     padding-left: 99px;
-    padding-top: 15px;
+    padding-top: 18px;
     background: url(../img/form-1.png) no-repeat  left 0;
 }
 
