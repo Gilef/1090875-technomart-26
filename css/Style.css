@@ -1903,33 +1903,44 @@ Main
     list-style: none;
 }
 /*******checkboxes**********/
+.filter-energy label,
 .filter-producers label{
     position: relative;
 }
 
-.filter-producers li{
+
+.filter-producers li,
+.filter-energy li{
     padding: 10px;
 }
 
 
-.producers-checkbox{
-    position: absolute;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
 
 .checkbox{
     position: absolute;
-    width: 27px;
-    height: 23px;
     left: -33px;
-    background: url(../img/svg-technomart/checkbox-off.svg) no-repeat;
+    fill:#c5c5c5;
 }
 
-.producers-checkbox:hover + .checkbox,
-.producers-checkbox:focus + .checkbox{
-    box-shadow: 0 0 3px 1px #518534;
+.checkbox:hover{
+    fill: #b5b5b5;
+}
+
+.checkbox-on{
+    display: none;
+}
+
+.producers-checkbox:checked ~ .checkbox-on{
+    display: inline-block;
+}
+
+.producers-checkbox:checked ~ .checkbox-off{
+    display: none;
+}
+
+/********focus-border*********/
+.producers-checkbox:focus ~ .checkbox{
+    box-shadow: 0 0 3px 1px #acb8a5;
     border-radius: 2px;
 }
 
@@ -1938,21 +1949,15 @@ Main
     border-radius: auto;
 }
 
-.producers-checkbox:checked + .checkbox{
-    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
+ .producers-checkbox:disabled + .checkbox{
+    fill: #e9e9e9;
+} 
+
+/***********filter-radio**************/
+
+.filter-energy label{
+    margin: 15px;
 }
-
-
-
-
-/* .producers-checkbox:disabled + .checkbox{
-    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
-}
-
-.producers-checkbox:checked:disabled + .checkbox{
-    background: url(../img/svg-technomart/checkbox-on.svg) no-repeat;
-} */
-
 /**********filters block********/
 
 /**********catalog-colomn-2********/
