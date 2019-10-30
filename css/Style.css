@@ -169,7 +169,7 @@ h1{
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 }
 
 .materials{
@@ -194,9 +194,14 @@ h1{
 .delivery{
     background: url("../img/svg-technomart/icon-5.svg") #ffbf47 no-repeat 191px 55%;
 }
+.delivery{
+    background: url("../img/svg-technomart/icon-5.svg") #ffbf47 no-repeat 191px 55%;
+}
+
 
 .features a{
     font-size: 14px;
+    line-height: 18px;
     font-weight: 400;
 }
 
@@ -241,8 +246,8 @@ main h2{
 
 .services{
     background-color: #f5f8fa;
-    margin-top: 65px;
-    padding-top: 70px;
+    margin-top: 70px;
+    padding-top: 63px;
     margin-bottom: 47px;
     min-width: 960px;
 }
@@ -259,8 +264,9 @@ main h2{
     font-weight:normal;
 }
 
-.services h2{
-    text-transform: uppercase;
+.srv-delivery h3{
+    line-height: 36px;
+    padding: 0;
 }
 
 footer{
@@ -317,6 +323,7 @@ header li{
 .index-header{
     background-color: #f4f7f9;
     padding-bottom:43px;  
+    min-width: 960px;
 }
     
 .index-header p{
@@ -860,9 +867,10 @@ Main
 
 
 .features-item p{
-    margin-top: 20px;
-    margin-bottom: 14px;
+    margin-top: 16px;
+    margin-bottom: 13px;
     font-size: 24px;
+    line-height: 30px;
     font-weight: bold;
 }
 
@@ -874,7 +882,7 @@ Main
     text-transform: uppercase;
     min-width: 135px;
     box-sizing: border-box;
-    padding:7px;
+    padding:10px;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -992,7 +1000,7 @@ Main
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 
@@ -1041,7 +1049,7 @@ Main
 
     width: 218px;
     min-height: 88px;
-    padding: 40px 0;
+    padding: 43px 0;
 
     background-color: #ffffff;
     z-index: 10;
@@ -1050,7 +1058,7 @@ Main
 .actions .buy,
 .actions .bookmark{
 
-    font-family: "Cuprum";
+    font-family: "cuprum", "Verdana", "Arial", "sans-serif";
     color: white;
     font-size: 14px;
     font-weight: normal;
@@ -1061,7 +1069,7 @@ Main
     display: block;
     width: 129px;
     margin: 0 auto;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     padding: 7px 0;
     border: 3px solid #63a63e;
     border-radius: 3px;
@@ -1069,9 +1077,28 @@ Main
 }
 
 .actions .buy{
+    position: relative;
     background-color: #63a63e;
     border-bottom-color: #367315;
 }
+
+.actions .buy::after{
+    position: absolute;
+    content: "";
+    left: 12px;
+    top:calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background:url(../img/svg-technomart/icon-cart.svg) no-repeat;
+    opacity: 0.3;
+}
+.actions .buy:hover::after,
+.actions .buy:active::after{
+    opacity: 1;
+}
+
+
+
 
 .actions .buy:hover,
 .actions .buy:focus{
@@ -1188,6 +1215,7 @@ Main
 .populars{
     background-color: #f9f5f0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -1203,8 +1231,9 @@ Main
     font-weight: normal;
     text-transform: uppercase;
     margin-left: 28px;
-    margin-top: 33px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 
 .popular-producers ul{
@@ -1214,13 +1243,14 @@ Main
     justify-content: space-between;
     align-items: stretch;
     padding: 0;
+    margin-top:10px;
 }
 
 .producers-item{
     display: flex;
     list-style: none;
-    margin: 5px 0;
-    margin-bottom: 18px;
+    margin: 6px 0;
+    margin-bottom: 17px;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
 }
@@ -1283,7 +1313,11 @@ Main
 .services h2{
     letter-spacing: 0;
     margin: 0;
-    margin-bottom: 28px;
+    line-height: 30px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
 }
 
 .services-wrapper{
@@ -1312,13 +1346,30 @@ Main
     background: url(../img/services-shadow.png) no-repeat;
 }
 
+.services-list button{
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    margin: 0;
+    padding: 16px 22px;
+    padding-bottom: 15px;
+    background: inherit;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+}
+
 .services-list li{
     text-align: left;
     display:block;
     width: 240px;
     box-sizing: border-box;
-    padding: 16px 22px;
-    padding-bottom: 15px;
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
@@ -1388,8 +1439,6 @@ Main
     font-size: 14px;
     padding: 10px 5px;
     width: 185px;
-
-
 }
 
 
@@ -1399,7 +1448,7 @@ Main
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
 }
 
 .company-info li{
@@ -1697,16 +1746,13 @@ Main
     border: 2px solid #dee3e4;
     border-radius: 3px;
     box-sizing: border-box;
+    padding: 5px 13px;
 }
 
 .letter-popup input[type="text"]::placeholder,
 .letter-popup textarea::placeholder{
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
     font-size: 13px;
-    text-indent: 13px;
-}
-.letter-popup textarea::placeholder{
-    padding-top: 5px ;
 }
 
 
@@ -1737,7 +1783,9 @@ Main
 }
 
 .letter-popup-text textarea{
-    height: 110px;
+    min-height: 110px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .button-wrapper .button{
@@ -1750,13 +1798,14 @@ Main
     position: fixed;
     top: calc(50% - 223px);
     right: calc(50% - 470px);
+    display: none;
+    z-index: 100;
 }
 
 .big-map{
     width: 940px;
     height: 446px;
     display: block;
-    display: none;
     box-shadow: 0px 0px 15px 0px rgba(47, 42, 43, 0.5);
 
 }
