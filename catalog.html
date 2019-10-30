@@ -104,15 +104,29 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-price">
               <legend><h3>Цена:</h3></legend>
-              <div>
-                0
-                <input type="range" min="0" max="30000" step="100" name="price" id="price">
-                30000
+              <div class="form-container">
+
+                <div class="form-block-1">
+                  <div class="grey-scale">
+                    <div class="price-sliders slider-min">
+                    </div>
+
+                    <div class="price-sliders slider-max">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-block-2">
+                    <input class="price-range min-price" type="text" value="0" placeholder="От">
+                    <input class="price-range max-price" class="" type="text" value="30000" placeholder="До">
+                </div>
+
               </div>
+
             </fieldset>
 
             <fieldset class="filter-producers">
-              <legend><h3>Производители</h3></legend>
+              <legend><h3>Производители:</h3></legend>
               <ul class="filter-producers-list">
                 <li>
                   <label> 
@@ -126,10 +140,9 @@
                     <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
                     <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                     </svg>
-                    BOSH
+                    BOSCH
                   </label>
                 </li>
-
   
                 <li>
                   <label>
@@ -159,7 +172,7 @@
                       <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
                       <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                       </svg>
-                      MAKINA
+                      MAKITA
                   </label>
                 </li>
 
@@ -198,9 +211,8 @@
             </fieldset>
 
             <fieldset class="filter-energy">
-              <legend><h3>Питание</h3></legend>
+              <legend><h3>Питание:</h3></legend>
               <ul class="filter-energy-list">
-
                 <li>
                   <label> 
                     <input class="producers-checkbox visually-hidden" type="radio" name="energy" value="acc" checked>
@@ -232,44 +244,10 @@
                     сетевые
                   </label>
                 </li>
-                
-
-                 <!-- <li>
-                    <label> 
-                      <input class="energy-radio visually-hidden" type="radio" name="acc" checked>
-  
-                      <svg class="radio radio-off" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                        <path  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
-                      </svg>
-  
-                      <svg class="radio radio-on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                        <path  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
-                        <circle cx="12.5" cy="12.5" r="4.5"/>
-                      </svg>
-                      аккумуляторные
-                    </label>
-                  </li>
-  
-                  <li>
-                    <label>
-                      <input class="energy-radio visually-hidden" type="radio" name="net">
-  
-                      <svg class="radio radio-off" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                        <path  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
-                      </svg>
-  
-                      <svg class="radio radio-on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                        <path  d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
-                        <circle cx="12.5" cy="12.5" r="4.5"/>
-                      </svg>
-                      сетевые
-                    </label>
-                  </li> -->
-                  
                 </ul>
             </fieldset>
 
-            <button type="submit">показать</button>
+            <button class="filter-block-submit" type="submit">показать</button>
           </form>
         </section>
         <section class="catalog-colomn-2">
@@ -279,7 +257,6 @@
               <li><a class="catalog-active" href="#"> По цене </a></li>
               <li><a href="#"> По типу </a></li>
               <li><a href="#"> По функционалу </a></li>
-              
             </ul>
             <div class="min-max-block">
               <a class="min indicator catalog-active" href="#">
@@ -297,9 +274,7 @@
               </a>
             </div>
           </section>
-
           <ul class="goods-list">
-
             <li class="goods-item" tabindex="0">
               <div class="actions">
                 <a href='#' class="buy">купить</a>
@@ -450,7 +425,6 @@
               <a class="next-page" href="#">Следующая </a>
             </div>
           </div>
-
         </section>
       </div>
     </div>
