@@ -364,7 +364,7 @@ nav a:active{
 .header-top a,
 .header-top label,
 .header-top input {
-    color: white;
+    color: #ffffff;
 }
 
 .header-top .h-left{
@@ -394,6 +394,7 @@ nav a:active{
 }
 
 .h-left{
+    width: 490px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -403,6 +404,7 @@ nav a:active{
 }
 
 .h-right{
+    width: 450px;
     line-height: 18px;
     font-size: 17px;
     display: flex;
@@ -1059,7 +1061,7 @@ Main
 .actions .bookmark{
 
     font-family: "cuprum", "Verdana", "Arial", "sans-serif";
-    color: white;
+    color: #ffffff;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -1116,7 +1118,7 @@ Main
   
 .actions .bookmark {
     color: #32425c;
-    background: white;
+    background: #ffffff;
     border-bottom-color: #63a63e;
 }
   
@@ -1192,9 +1194,10 @@ Main
     margin: 10px 41px;
     margin-bottom: 20px;
     padding: 10px 30px;
-    color: white;
+    color: #ffffff;
     background: #ee3643;
     border-radius: 3px;
+    text-transform: uppercase;
 }
 
 .goods-item .price:after {
@@ -1207,7 +1210,7 @@ Main
     width: 0;
     height: 0;
 
-    border: 20px solid white;
+    border: 19px solid #ffffff;
     border-left-color: #ee3643;
 }
   
@@ -1382,8 +1385,9 @@ Main
     background: #ffffff;
     border-color: #ffffff;
     color: #32425c;
-
 }
+
+
 
 .services p{
     font-family:"ptsans", "Arial", "Arial Narrow", "sans-serif";
@@ -1394,6 +1398,12 @@ Main
     font-size: 21px;
     font-weight: bold;
     list-style: none;
+}
+
+
+.services button:hover:not(.srv-active),
+.services button:focus:not(.srv-active){
+    background-color: #293449;
 }
 
 .services-block{
@@ -1690,7 +1700,15 @@ Main
     padding-top: 2px;
 }
 
+.bot-item-3 a:hover,
+.bot-item-3 a:focus{
+    text-decoration: underline;
+}
 
+.bot-item-3 a:active{
+    text-decoration: initial;
+    color: #ee3643;
+}
 
 .bot-item-3 p{
     margin: 0;
@@ -1747,6 +1765,17 @@ Main
     border-radius: 3px;
     box-sizing: border-box;
     padding: 5px 13px;
+}
+
+.letter-popup input[type="text"]:hover,
+.letter-popup textarea:hover{
+    border-color: #b5b5b5;
+}
+
+.letter-popup input[type="text"]:focus,
+.letter-popup textarea:focus{
+    border-color: #ee3643;
+    outline: none;
 }
 
 .letter-popup input[type="text"]::placeholder,
@@ -2018,7 +2047,9 @@ Main
     top:calc(50% - 10px);
     z-index: 2;
     box-shadow: 0 2px 0 0 #e0ddd8;
+    cursor: pointer;
 }
+
 .slider-max{
     right: 18px;
 }
@@ -2248,6 +2279,7 @@ Main
 /********catalog goods-list*********/
 .catalog-colomn-2 .goods-list{
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .perforator-block .goods-item{
@@ -2259,7 +2291,7 @@ Main
     display: flex;
     flex-wrap: wrap;
     line-height: 18px;
-    margin-top: 31px;
+    margin-top: 30px;
     margin-bottom: 60px;
     text-transform: uppercase;
 }
@@ -2276,12 +2308,13 @@ Main
     text-align: center;
 }
 
-.catalog-pagenation a:hover,
-.catalog-pagenation a:focus{
+.perforator-block .catalog-pagenation a:hover,
+.perforator-block .catalog-pagenation a:focus{
     border-color: #bdc6ca;
+    color: #000000;
 }
 
-.catalog-pagenation a:active{
+.perforator-block .catalog-pagenation a:active{
     border-color: #ee3643;
 }
 
