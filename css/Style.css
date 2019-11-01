@@ -57,7 +57,6 @@ body {
     background-color: #ffffff;
 }
 
-
 a {
     color: inherit;
     text-decoration: none;
@@ -113,12 +112,15 @@ a {
     vertical-align: middle;
 }
 
-h1 {
+.header-h1 {
+    display: block;
     padding-top: 5px;
     line-height: 23px;
     font-size: 16px;
     color: #ee3643;
     font-style: italic;
+    width: 210px;
+    margin: auto;
 }
 
 .logo {
@@ -128,7 +130,6 @@ h1 {
 .logo img {
     margin: 10px auto;
 }
-
 
 .h-right .header-make-order {
     background: #63a63e;
@@ -190,14 +191,13 @@ h1 {
     background: url("../img/svg-technomart/icon-5.svg") #ffbf47 no-repeat 191px 55%;
 }
 
-
 .features a {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
 }
 
-main h2 {
+.wrap h2 {
     font-size: 30px;
     color: #32425c;
 }
@@ -224,7 +224,6 @@ main h2 {
     color: #a9a9a9;
 }
 
-
 .company-info h3 {
     box-sizing: border-box;
     padding-bottom: 10px;
@@ -233,7 +232,6 @@ main h2 {
     line-height: 30px;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 30px;
     color: #000000;
 }
 
@@ -247,7 +245,6 @@ main h2 {
 
 .services h3 {
     text-transform: uppercase;
-    padding: 0;
     margin: 0;
     color: #32425c;
     font-size: 36px;
@@ -294,24 +291,12 @@ footer {
     color: #ffd180;
 }
 
-/* Сетка*/
-
-/*
--
--
--
-Header
--
--
--
-*/
-
 html,
 body {
     margin: 0;
 }
 
-header li {
+.index-header li {
     list-style: none;
 }
 
@@ -325,19 +310,12 @@ header li {
     margin: 0;
 }
 
-.index-header nav a {
-    display: block;
-    padding-left: 30px;
-    padding-right: 31px;
-}
-
-
-nav a:hover,
-nav a:focus {
+.header-bot a:hover,
+.header-bot a:focus {
     background: #293449;
 }
 
-nav a:active {
+.header-bot a:active {
     background: #1d2739;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -382,7 +360,6 @@ nav a:active {
 
 .header-top-wrapper input:hover {
     background-color: #ffffff;
-
 }
 
 .h-left {
@@ -404,7 +381,6 @@ nav a:active {
     justify-content: space-between;
     flex-direction: row;
 }
-
 
 .h-right a {
     box-sizing: border-box;
@@ -463,7 +439,6 @@ nav a:active {
 .search-form {
     position: relative;
 }
-
 
 .search-icon {
     position: absolute;
@@ -529,12 +504,10 @@ nav a:active {
     margin-bottom: 32px;
 }
 
-
 .header-mid .mid-block-1 {
     margin: auto;
     text-align: left;
     width: 310px;
-
 }
 
 .header-mid .mid-block-2 {
@@ -545,7 +518,6 @@ nav a:active {
 .header-mid .mid-block-2 p {
     margin-bottom: 5px;
 }
-
 
 .header-phone a {
     position: relative;
@@ -562,7 +534,7 @@ nav a:active {
     text-align: center;
     color: #ee3643;
     font-size: 21px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 
 .header-phone a::before {
@@ -573,7 +545,6 @@ nav a:active {
     top: 0;
     left: 13px;
     background: url("../img/svg-technomart/icon-phone.svg") no-repeat center left;
-
 }
 
 .mid-block-2 p:last-child {
@@ -629,7 +600,7 @@ nav a:active {
 
 .mid-block-3-catalog .profile-name {
     position: relative;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-size: 21px;
     background-color: #ffffff;
     line-height: 21px;
@@ -642,7 +613,6 @@ nav a:active {
 
 .profile-wrapper:hover {
     color: #ee3643;
-
 }
 
 .mid-block-3-catalog .icon-logout {
@@ -656,7 +626,6 @@ nav a:active {
     vertical-align: middle;
     fill: #c5c5c5;
     position: absolute;
-
 }
 
 .login-exit {
@@ -756,11 +725,6 @@ nav a:active {
     width: 150px;
 }
 
-h1 {
-    width: 210px;
-    margin: auto;
-}
-
 .header-bot ul {
     color: #ffffff;
     align-items: center;
@@ -774,22 +738,10 @@ h1 {
 
 .header-bot a {
     box-sizing: border-box;
+    display: block;
     line-height: 17px;
-    padding: 21px 0;
-    padding-bottom: 19px;
+    padding: 21px 31px 19px 30px;
 }
-
-
-/*
--
--
--
-Main
--
--
--
-*/
-
 
 .features-wrap {
     display: flex;
@@ -812,7 +764,7 @@ Main
     position: relative;
     box-sizing: border-box;
     padding: 0;
-    margin-right: 0px;
+    margin-right: 0;
     width: 620px;
     min-height: 266px;
     order: 4;
@@ -822,19 +774,65 @@ Main
 .slide-controls {
     content: "";
     position: absolute;
-    width: 34px;
-    height: 16px;
-    bottom: 20px;
-    left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30px;
+    height: 10px;
+    bottom: 36.7px;
+    left: calc(50% - 15px);
     z-index: 5;
 }
 
-.slide-controls i {
-    height: 10px;
+.slide-active:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: calc(50% - 2.5px);
+    right: 2.5px;
+    background-color: #ee3643;
+    border-radius: 50%;
+}
+
+.slide-movement {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: 0;
+    z-index: 5;
+}
+
+.slide-button-controls {
+    display: block;
     width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
 
+.slide-button-movement {
+    display: block;
+    width: 20px;
+    height: 40px;
+    border: 0;
+    margin: 0 24px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slide-forward {
+    background: url(../img/svg-technomart/icon-right.svg) no-repeat;
+}
+
+.slide-back {
+    background: url(../img/svg-technomart/icon-left.svg) no-repeat;
 }
 
 .slide-item:nth-child(1) {
@@ -856,7 +854,6 @@ Main
     margin-bottom: 20px;
 }
 
-
 .features-item p {
     margin-top: 16px;
     margin-bottom: 13px;
@@ -864,7 +861,6 @@ Main
     line-height: 30px;
     font-weight: bold;
 }
-
 
 .transparent-button {
     display: inline-block;
@@ -891,7 +887,7 @@ Main
     margin: 0;
     padding: 0;
     list-style: none;
-    background-image: #808080 100% 100%;
+    background: #808080 100% 100%;
 }
 
 .slide-list {
@@ -926,10 +922,9 @@ Main
     font-weight: normal;
     font-size: 18px;
     max-width: 394px;
-    margin: 0px;
+    margin: 0;
     padding-bottom: 10px;
 }
-
 
 .button {
     font-family: "cuprum", "Verdana", "Arial", "sans-serif";
@@ -1001,7 +996,7 @@ Main
 }
 
 .goods-item:hover {
-    box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.5);
     border-color: transparent;
 }
 
@@ -1180,14 +1175,12 @@ Main
     border-left-color: #ee3643;
 }
 
-
 .populars {
     background-color: #f9f5f0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 
 .populars p {
     margin-top: 25px;
@@ -1227,14 +1220,13 @@ Main
 .producers-item:hover,
 .producers-item:focus {
     border: 1px solid transparent;
-    box-shadow: 0px 5px 25px 0px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.5);
 }
-
 
 .producers-item:active {
     opacity: 0.7;
     border: 1px solid transparent;
-    box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .producers-item img,
@@ -1268,7 +1260,6 @@ Main
 .producers-item:nth-last-child(4) a {
     padding-left: 3px;
 }
-
 
 .producers-item:nth-child(1) a {
     padding-right: 2px;
@@ -1322,10 +1313,13 @@ Main
     -moz-appearance: none;
     appearance: none;
     border: 0;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
     margin: 0;
     padding: 16px 22px;
     padding-bottom: 15px;
     background: inherit;
+    background-color: #32425c;
     color: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -1342,12 +1336,9 @@ Main
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
-    background-color: #32425c;
-    border-bottom: 1px solid #293449;
-    border-top: 1px solid #405069;
 }
 
-.services-list li:nth-child(1) {
+.services-list .srv-active {
     background: #ffffff;
     border-color: #ffffff;
     color: #32425c;
@@ -1464,7 +1455,6 @@ Main
     margin-top: 9px;
 }
 
-
 .tk-list {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -1510,7 +1500,6 @@ Main
     line-height: 18px;
 }
 
-/************************ FOOTER*************************/
 .footer-wrapper ul {
     display: flex;
     flex-wrap: wrap;
@@ -1521,8 +1510,6 @@ Main
     justify-content: space-between;
     margin-bottom: 50px;
 }
-
-/**********footer-column-1*******/
 
 .footer-column-1 {
     width: 326px;
@@ -1538,9 +1525,6 @@ Main
     margin: 0;
     margin-left: 5px;
 }
-
-/**********footer-column-2*******/
-
 
 .footer-column-2 {
     display: flex;
@@ -1558,7 +1542,6 @@ Main
     padding-left: 59px;
     list-style: none;
 }
-
 
 .footer-list-1,
 .footer-list-2 {
@@ -1590,8 +1573,6 @@ Main
     margin-top: 33px;
 }
 
-/**********footer-bot***************/
-
 .footer-bot .wrap {
     display: flex;
     justify-content: space-between;
@@ -1604,8 +1585,6 @@ Main
     margin: 0;
     margin-top: 37px;
 }
-
-/*******Social medea*******/
 
 .bot-item-2 {
     display: flex;
@@ -1644,8 +1623,6 @@ Main
     background-image: url(../img/svg-technomart/icon-insta.svg);
 }
 
-
-
 .soc-media:hover,
 .soc-media:focus,
 .soc-media:active {
@@ -1681,22 +1658,21 @@ Main
     margin-top: 35px;
 }
 
-/*************Popups***********/
-
-/*************wite-back***********/
+body .popup-hide {
+    display: none;
+}
 
 .letter-popup {
     z-index: 100;
     position: fixed;
     display: flex;
-    display: none;
     flex-direction: column;
     width: 620px;
     height: 423px;
     right: calc(50% - 310px);
     bottom: calc(50% - 211.5px);
     border-top: 7px solid #ff5358;
-    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.75);
     background-color: inherit;
     font-size: 18px;
     line-height: 18px;
@@ -1749,7 +1725,6 @@ Main
     font-size: 13px;
 }
 
-
 .letter-popup input {
     height: 38px;
     box-sizing: border-box;
@@ -1787,13 +1762,10 @@ Main
     padding: 10px;
 }
 
-/**********Map-popup**********/
-
 .map-popup {
     position: fixed;
     top: calc(50% - 223px);
     right: calc(50% - 470px);
-    display: none;
     z-index: 100;
 }
 
@@ -1801,7 +1773,7 @@ Main
     width: 940px;
     height: 446px;
     display: block;
-    box-shadow: 0px 0px 15px 0px rgba(47, 42, 43, 0.5);
+    box-shadow: 0 0 15px 0 rgba(47, 42, 43, 0.5);
 }
 
 .map-popup-close {
@@ -1815,11 +1787,6 @@ Main
     background: url(../img/letter-closer.png) no-repeat center center;
 }
 
-
-/******************Сatalog-main******************/
-
-
-/**********Сatalog-main-nav********/
 .catalog-main-nav {
     font-family: "ptsans", "Arial", "Arial Narrow", "sans-serif";
     display: flex;
@@ -1830,7 +1797,6 @@ Main
     padding: 0;
     margin-bottom: 12px;
 }
-
 
 .catalog-main-nav li {
     position: relative;
@@ -1879,10 +1845,6 @@ Main
     display: none;
 }
 
-
-
-/*********H1-catalog******/
-
 .catalog-h1 {
     font-style: normal;
     text-transform: uppercase;
@@ -1895,9 +1857,8 @@ Main
     padding-bottom: 29px;
     padding-left: 28px;
     width: auto;
+    margin: 10px 0;
 }
-
-/*********perforator-block***********/
 
 .perforator-block {
     display: flex;
@@ -1913,8 +1874,6 @@ Main
 .catalog-colomn-2 {
     width: 700px;
 }
-
-/**********catalog-colomn-1********/
 
 .perforator-block h2,
 .filter-line {
@@ -1948,11 +1907,6 @@ Main
     margin: 0;
 }
 
-.catalog-colomn-1 legend {
-    padding: 0;
-    margin: 0;
-}
-
 .catalog-colomn-1 fieldset {
     padding: 0;
     padding-bottom: 25px;
@@ -1968,8 +1922,6 @@ Main
     margin-top: 10px;
 }
 
-/*******checkboxes**********/
-/**********filter-price*************/
 .filter-price {
     margin: 0;
     padding: 0;
@@ -1980,7 +1932,6 @@ Main
     width: 220px;
 }
 
-/********form-block-1**************/
 .form-container .form-block-1 {
     box-sizing: border-box;
     padding: 20px;
@@ -2037,7 +1988,6 @@ Main
     border-radius: 50%;
 }
 
-/*******form-block-2****************/
 .form-container .form-block-2 {
     position: relative;
     display: flex;
@@ -2063,18 +2013,16 @@ Main
     height: 38px;
     width: 95px;
     background-color: #f7f3ec;
-    border: 0px;
+    border: 0;
     padding: 0;
     text-align: center;
     font-size: 17px;
     line-height: 18px;
 }
 
-/*****************************/
 .catalog-colomn-1 fieldset:nth-of-type(2) {
     padding-bottom: 12px;
 }
-
 
 .filter-energy label,
 .filter-producers label {
@@ -2095,7 +2043,6 @@ Main
     margin-top: 17px;
     margin-bottom: 4px;
 }
-
 
 .checkbox {
     position: absolute;
@@ -2121,7 +2068,6 @@ Main
     display: none;
 }
 
-/********focus-border*********/
 .producers-checkbox:focus~.checkbox {
     box-shadow: 0 0 3px 1px #2d6f9b;
     border-radius: 2px;
@@ -2129,7 +2075,7 @@ Main
 
 .producers-checkbox:disabled:hover+.checkbox {
     box-shadow: none;
-    border-radius: auto;
+    border-radius: initial;
 }
 
 .producers-checkbox:disabled~.checkbox {
@@ -2139,8 +2085,6 @@ Main
 .producers-checkbox:disabled {
     color: #e9e9e9;
 }
-
-/***********filter-energy**************/
 
 .catalog-colomn-1 fieldset:nth-of-type(3) {
     border-bottom: 0;
@@ -2152,7 +2096,6 @@ Main
     letter-spacing: 0.5px;
 }
 
-/******submit-button******/
 .filter-block-submit {
     font-size: 13px;
     line-height: 18px;
@@ -2167,13 +2110,6 @@ Main
     font-family: inherit;
 }
 
-/**************/
-
-/**********filters block********/
-
-/**********catalog-colomn-2********/
-
-/**************filter-line*****************/
 .filter-line {
     display: flex;
     width: 100%;
@@ -2193,7 +2129,6 @@ Main
     fill: rgb(0, 0, 0);
 }
 
-
 .perforator-block .catalog-active,
 .perforator-block .catalog-active:hover,
 .perforator-block .catalog-active:focus,
@@ -2209,7 +2144,7 @@ Main
     justify-content: space-around;
     margin: 0;
     padding: 9px;
-    padding-right: 0px;
+    padding-right: 0;
     width: calc(100% - 220px);
     background-color: #f7f3ec;
 }
@@ -2246,8 +2181,6 @@ Main
     padding-top: 12px;
 }
 
-/********catalog goods-list*********/
-
 .catalog-colomn-2 .goods-list {
     flex-wrap: wrap;
     margin-top: 20px;
@@ -2256,8 +2189,6 @@ Main
 .perforator-block .goods-item {
     margin-bottom: 21px;
 }
-
-/********catalog-pagenation**********/
 
 .catalog-pagenation {
     display: flex;
@@ -2280,13 +2211,13 @@ Main
     text-align: center;
 }
 
-.perforator-block .catalog-pagenation a:hover,
-.perforator-block .catalog-pagenation a:focus {
+.catalog-pagenation a:hover,
+.catalog-pagenation a:focus {
     border-color: #bdc6ca;
     color: #000000;
 }
 
-.perforator-block .catalog-pagenation a:active {
+.catalog-pagenation a:active {
     border-color: #ee3643;
 }
 
@@ -2305,7 +2236,11 @@ Main
     color: #ffffff;
 }
 
-/**************************************/
+.catalog-pagenation .catalog-active:focus,
+.catalog-pagenation .catalog-active:hover,
+.catalog-pagenation .catalog-active:active {
+    color: #ffffff;
+}
 
 .article {
     background-color: #f2f6f8;
@@ -2326,17 +2261,15 @@ Main
     letter-spacing: 0.1px;
 }
 
-/********************catalog popup*********************/
 .catalog-buy-popup {
     z-index: 100;
     position: fixed;
-    display: none;
     width: 620px;
     height: 275px;
     right: calc(50% - 310px);
     bottom: calc(50% - 141px);
     border-top: 7px solid #ee3643;
-    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.75);
     background-color: inherit;
     font-size: 30px;
     line-height: 30px;
@@ -2403,4 +2336,3 @@ Main
 .catalog-popup-row-2 .button:last-child:active {
     background-color: #b3b0b0;
 }
-

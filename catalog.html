@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/Style.css" rel="stylesheet">
 </head>
 
@@ -32,11 +33,11 @@
     <div class="wrap">
       <section class="header-mid">
         <div class="mid-block-1">
-          <h1>
+          <span class="header-h1">
             Интернет магазин
             строительных материалов
             и&nbsp;инструментов для ремесла
-          </h1>
+          </span>
         </div>
 
         <div class="mid-block-2">
@@ -45,7 +46,6 @@
         </div>
 
         <div class="mid-block-3-catalog">
-
           <div class="profile-wrapper">
             <a class="profile-name" href="#">
               <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
@@ -68,7 +68,6 @@
             <a class="my-orders" href="#">Мои заказы</a>
             <a class="personal-profile" href="#">Личный кабинет</a>
           </div>
-
         </div>
       </section>
 
@@ -88,7 +87,6 @@
 
   <main>
     <div class="wrap">
-
       <ul class="catalog-main-nav">
         <li><a class="catalog-main-nav-item to-home" href="index.html">Главная</a></li>
         <li><a class="catalog-main-nav-item to-catalog" href="list.html">Каталог</a> </li>
@@ -98,17 +96,13 @@
 
       <h1 class="catalog-h1">Перфораторы</h1>
 
-
       <div class="perforator-block">
-        <!--Доделать второй позунок,и отображение выбранных значений-->
         <section class="catalog-colomn-1">
           <h2>Фильтр:</h2>
 
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-price">
-              <legend>
-                <h3>Цена:</h3>
-              </legend>
+              <h3>Цена:</h3>
               <div class="form-container">
 
                 <div class="form-block-1">
@@ -123,17 +117,13 @@
 
                 <div class="form-block-2">
                   <input class="price-range min-price" type="text" value="0" placeholder="От">
-                  <input class="price-range max-price" class="" type="text" value="30000" placeholder="До">
+                  <input class="price-range max-price" type="text" value="30000" placeholder="До">
                 </div>
-
               </div>
-
             </fieldset>
 
             <fieldset class="filter-producers">
-              <legend>
-                <h3>Производители:</h3>
-              </legend>
+              <h3>Производители:</h3>
               <ul class="filter-producers-list">
                 <li>
                   <label>
@@ -238,9 +228,7 @@
             </fieldset>
 
             <fieldset class="filter-energy">
-              <legend>
-                <h3>Питание:</h3>
-              </legend>
+              <h3>Питание:</h3>
               <ul class="filter-energy-list">
                 <li>
                   <label>
@@ -449,7 +437,6 @@
               <div class="discount"><del></del></div>
               <div class="price">12500 p.</div>
             </li>
-
           </ul>
 
           <div class="catalog-pagenation">
@@ -541,7 +528,7 @@
     </section>
   </footer>
 
-  <div class="catalog-buy-popup">
+  <div class="catalog-buy-popup popup-hide">
     <div class="catalog-popup-row-1">
       <p>Товар добавлен в корзину!</p>
     </div>

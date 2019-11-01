@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/Style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     <div class="wrap">
       <section class="header-mid">
         <div class="mid-block-1">
-          <h1>
+          <h1 class="header-h1">
             Интернет магазин
             строительных материалов
             и&nbsp;инструментов для ремесла
@@ -77,7 +77,6 @@
     <div class="wrap">
       <section class="features">
         <div class="features-wrap">
-
           <div class="materials features-item">
             <div class="flag flag-new">Новое</div>
             <p>Материалы</p>
@@ -107,10 +106,17 @@
           </div>
 
           <div class="slide features-item">
-            <div class="slide-controls">
-              <i class="active"></i>
-              <i></i>
-            </div>
+            <form class="slide-switch" action="https://echo.htmlacademy.ru" method="get">
+              <div class="slide-controls">
+                <button class="slide-button-controls " type="button"></button>
+                <button class="slide-button-controls slide-active" type="button"></button>
+              </div>
+
+              <div class="slide-movement">
+                <button class="slide-button-movement slide-back" type="button"></button>
+                <button class="slide-button-movement slide-forward" type="button"></button>
+              </div>
+            </form>
 
             <ul class="slide-list">
               <li class="slide-item">
@@ -122,30 +128,10 @@
                 <p>Настоящие мужские игрушки</p>
               </li>
             </ul>
-            <a class="slide-button button" href="">
+            <a class="slide-button button" href="catalog.html">
               Открыть каталог
             </a>
           </div>
-
-
-
-          <!--<img src="img/slider_drill.jpg" width="620" height="266" alt="Дрель">
-              -->
-          <!--
-              <img src="img/slider_drill.jpg" width="620" height="266" alt="Дрель">
-              -->
-          <!--<a href="">Открыть каталог</a>-->
-          <!--
-                <button type="button">Вперед</button>
-                <button type="button">Назад</button>
-              -->
-          <!-- <p>Перфораторы</p>-->
-          <!--<p>Настоящие мужские игрушки</p>-->
-          <!--
-                <img src="img/slider_perforator.jpg" width="620" height="266" alt="Перфоратор">
-              -->
-          <!--<a href="#">Открыть каталог</a>-->
-
         </div>
       </section>
       <section class="popular-goods">
@@ -286,7 +272,6 @@
         </div>
       </div>
     </section>
-    <!--<h2 class="visually-hidden">Информация о компании </h2>-->
     <div class="wrap">
       <section class="company-info">
         <section class="company-column-1">
@@ -383,19 +368,18 @@
             <p>Разработано -</p>
             <p><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </div>
-
         </div>
       </div>
     </section>
   </footer>
 
-  <div class="map-popup">
+  <div class="map-popup popup-hide">
     <img class="big-map" src="img/map.png" height="476" width="940" id="big-map"
       alt="Наш адрес:г.Санкт-Петербург, ул.Б.Конюшенная д.19/8">
     <button class="map-popup-close" type="button">Закрыть</button>
   </div>
 
-  <form class="letter-popup" action="https://echo.htmlacademy.ru" method="POST">
+  <form class="letter-popup popup-hide" action="https://echo.htmlacademy.ru" method="POST">
     <h2 class="visually-hidden">Обратная связь</h2>
     <div class="inputs-wrapper">
       <div class="letter-popup-name">
@@ -423,9 +407,8 @@
     </div>
 
     <button class="letter-popup-close" type="button"> Закрыть </button>
-
   </form>
-  <div class="catalog-buy-popup">
+  <div class="catalog-buy-popup popup-hide">
     <div class="catalog-popup-row-1">
       <p>Товар добавлен в корзину!</p>
     </div>
@@ -435,7 +418,6 @@
     </div>
     <button class="catalog-buy-close" type="button">Закрыть</button>
   </div>
-
 </body>
 
 </html>
