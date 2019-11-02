@@ -974,6 +974,7 @@ body {
 
 .goods-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     margin: 0;
@@ -1658,10 +1659,6 @@ body {
     margin-top: 35px;
 }
 
-body .popup-hide {
-    display: none;
-}
-
 .letter-popup {
     z-index: 100;
     position: fixed;
@@ -1767,6 +1764,7 @@ body .popup-hide {
     top: calc(50% - 223px);
     right: calc(50% - 470px);
     z-index: 100;
+    background-color: #808080;
 }
 
 .big-map {
@@ -2335,4 +2333,8 @@ body .popup-hide {
 
 .catalog-popup-row-2 .button:last-child:active {
     background-color: #b3b0b0;
+}
+
+.popup-hide {
+    display: none;
 }
