@@ -161,7 +161,7 @@ a {
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 }
 
 .materials {
@@ -445,7 +445,6 @@ body {
     left: 17px;
     top: 13px;
     fill: rgba(255, 255, 255, 0.3);
-    opacity: 30%;
 }
 
 .search:hover+.search-icon {
