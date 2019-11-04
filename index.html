@@ -108,22 +108,22 @@
           <div class="slide features-item">
             <form class="slide-switch" action="https://echo.htmlacademy.ru" method="get">
               <div class="slide-controls">
-                <button class="slide-button-controls " type="button"></button>
-                <button class="slide-button-controls slide-active" type="button"></button>
+                <button class="slide-button-controls slide-1-button slide-active" type="button"></button>
+                <button class="slide-button-controls slide-2-button" type="button"></button>
               </div>
 
               <div class="slide-movement">
-                <button class="slide-button-movement slide-back" type="button"></button>
-                <button class="slide-button-movement slide-forward" type="button"></button>
+                <button class="slide-button-movement slide-1-button slide-back" type="button"></button>
+                <button class="slide-button-movement slide-2-button slide-forward" type="button"></button>
               </div>
             </form>
 
             <ul class="slide-list">
-              <li class="slide-item">
+              <li class="slide-item slide-1 current-slide">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
               </li>
-              <li class="slide-item">
+              <li class="slide-item slide-2">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
               </li>
@@ -237,12 +237,12 @@
 
         <div class="services-wrapper">
           <ul class="services-list">
-            <li><button class="srv-active" type="button">Доставка</button></li>
-            <li><button type="button">Гарантия</button></li>
-            <li><button type="button">Кредит</button></li>
+            <li><button class="srv-list-button-1 srv-active" type="button">Доставка</button></li>
+            <li><button class="srv-list-button-2" type="button">Гарантия</button></li>
+            <li><button class="srv-list-button-3" type="button">Кредит</button></li>
           </ul>
 
-          <div class="services-block srv-delivery">
+          <div class="services-block srv-active-slide srv-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
@@ -306,7 +306,7 @@
           <a class="map"
             href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323055%2C59.938631&mode=search&sll=37.622504%2C55.753215&sspn=1.444702%2C0.497219&text=г.%20Санкт-Петербург%2C%20ул.%20Б.%20Конюшенная%2C%20д.%2019%2F8&z=16"><img
               src="img/map.png" width="300" height="158" alt="Карта"></a>
-          <a class="button" href="write-back.html">Заблудились? Напишите нам!</a>
+          <a class="button letter-popup-link" href="write-back.html">Заблудились? Напишите нам!</a>
         </section>
       </section>
     </div>
@@ -373,13 +373,13 @@
     </section>
   </footer>
 
-  <div class="map-popup popup-hide">
+  <div class="map-popup popup popup-hide">
     <img class="big-map" src="img/map.png" height="476" width="940" id="big-map"
       alt="Наш адрес:г.Санкт-Петербург, ул.Б.Конюшенная д.19/8">
-    <button class="map-popup-close" type="button">Закрыть</button>
+    <button class="map-popup-close popup-close-button" type="button">Закрыть</button>
   </div>
 
-  <form class="letter-popup popup-hide" action="https://echo.htmlacademy.ru" method="POST">
+  <form class="letter-popup popup popup-hide" action="https://echo.htmlacademy.ru" method="POST">
     <h2 class="visually-hidden">Обратная связь</h2>
     <div class="inputs-wrapper">
       <div class="letter-popup-name">
@@ -418,6 +418,7 @@
     </div>
     <button class="catalog-buy-close" type="button">Закрыть</button>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
